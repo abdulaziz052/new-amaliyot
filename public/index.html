@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <style>
@@ -45,12 +48,12 @@
 <body>
 
     <!-- Header start -->
-    <header class="py-[30px]">
-        <div style="background-image: url(./img/header/header-bg.png); border-top-right-radius: 24px; border-bottom-right-radius: 24px; background-size: cover; background-repeat: no-repeat;"
-            class="max-w-[1256px] mx-auto px-5">
+    <header class="md:py-[30px]">
+        <div style="background-image: url(./img/header/header-bg.png);  background-size: cover; background-repeat: no-repeat;"
+            class="max-w-[1256px] bg-center md:bg-cover rounded-none  md:rounded-[24px] mx-auto px-5 ">
             <div>
                 <div class="flex justify-between pt-[30px] pb-[30px]">
-                    <ul class="flex gap-[32px]">
+                    <ul class="hidden md:flex gap-[32px]">
                         <li>
                             <a class="flex items-center text-white font-semibold text-[14px] gap-[4px]" href="#">
                                 <img src="./img/header/airplane.svg" alt="">
@@ -67,7 +70,49 @@
                     <a href="#">
                         <img src="./img/header/Logo.svg" alt="">
                     </a>
-                    <ul class="flex gap-[32px]">
+
+                    <button id="hamburger-menu">
+                        <i class="fa-solid fa-xl fa-bars" style="color: #ffffff;"></i>
+                    </button>
+                    <div style="transition: all .5s; background-image: url(./img/plan/flights.png);" id="responsive-menu"
+                        class=" bg-center bg-no-repeat px-[24px] pt-[24px] pb-[230px] w-full mx-auto fixed top-0 -left-full">
+                        <div class="flex items-center justify-between mb-[40px]">
+                            <a href="">
+                                <img class="" src="./img/header/Logo.svg" alt="">
+                            </a>
+                            <button id="close-menu">
+                                <i class=" fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+                            </button>
+
+                        </div>
+                        <div class="justify-center flex">
+                            <ul class="w-[100px] flex flex-col gap-[20px] justify-center">
+                                <li class="w-[100px]">
+                                    <a class="mb-[20px] w-[100px] flex items-center text-white font-semibold text-[14px] gap-[4px]"
+                                        href="#">
+                                        <img src="./img/header/airplane.svg" alt="">
+                                        Find Flight
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="mb-[20px] flex items-center text-white font-semibold text-[14px] gap-[4px]"
+                                        href="#">
+                                        <img src="./img/header/bed.svg" alt="">
+                                        Find Stays
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class=" text-white font-semibold text-[14px] py-[15px] px-[24px]"
+                                        href="#">Login</a>
+                                </li>
+                                <li>
+                                    <a class="text-black bg-white py-[15px] px-[24px] rounded-[10px] font-semibold text-[14px]"
+                                        href="#">Sign up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="hidden md:flex gap-[32px]">
                         <li>
                             <a class="text-white font-semibold text-[14px]" href="#">Login</a>
                         </li>
@@ -79,19 +124,19 @@
                 </div>
             </div>
             <div class="text-center pt-[54px] pb-[229px]">
-                <h1 class="font-bold text-white text-[45px] leading-[56.84px]">Helping Others</h1>
-                <h2 class="font-bold text-white text-[80px] leading-[101.04px]]">Live & Travel</h2>
+                <h1 class="font-bold text-white text-[32px] md:text-[45px] md:leading-[56.84px]">Helping Others</h1>
+                <h2 class="font-bold text-white text-[40px] md:text-[80px] md:leading-[101.04px]]">Live & Travel</h2>
                 <p class="font-semibold text-white text-[20px] leading-[24.38px]">Special offers to suit your plan</p>
             </div>
         </div>
     </header>
     <!-- Header end -->
     <!-- Plan start -->
-    <section class="pb-[70px]">
+    <section class="pb-[70px] ">
         <div class="max-w-[1256px] mx-auto px-5">
             <!-- inputs mt-- start -->
-            <div style="box-shadow: 0px 4px 16px 0px #8DD3BB26;"
-                class="max-w-[1232px] w-full pr-[16px] pt-[16px] pb-[16px] pl-[32px] rounded-[16px] mt-[-130px] bg-white">
+            <div  style="box-shadow: 0px 4px 16px 0px #8DD3BB26;"
+                class="hidden md:block max-w-[1232px] w-full pr-[16px] pt-[16px] pb-[16px] pl-[32px] rounded-[16px] mt-[-130px] bg-white">
                 <div>
                     <ul class="flex gap-[32px] mb-[48px]">
                         <li>
@@ -151,11 +196,11 @@
             </div>
             <!-- inputs mt-- end -->
             <div class="pt-[80px]">
-                <div class="flex items-center justify-between mb-[40px]">
+                <div class=" md:flex items-center justify-between mb-[40px]">
                     <div>
-                        <h2 class="mb-[16px] font-semibold text-[32px] leading-[39.01px] text-[#000000]">Plan your
+                        <h2 class="mb-[16px] font-semibold text-[20px] md:text-[32px] md:leading-[39.01px] text-[#000000]">Plan your
                             perfect trip</h2>
-                        <p class="font-normal text-[16px[] leading-[19.5px] text-[#112211]">Search Flights & Places Hire
+                        <p class="mb-[20px] md:mb-0 font-normal text-[12px] md:text-[16px] md:leading-[19.5px] text-[#112211]">Search Flights & Places Hire
                             to our most popular destinations</p>
                     </div>
                     <div>
@@ -165,7 +210,7 @@
                     </div>
                 </div>
                 <!-- cards start -->
-                <div class="grid grid-cols-3 gap-[32px] mb-[80px]">
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-[24px] md:gap-[32px] mb-[80px]">
                     <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
                         class="rounded-[16px] py-[16px] pl-[16px] max-w-[389.33px] w-full flex gap-[16px] items-center">
                         <img class="w-[90px]" src="./img/plan/card-1.png" alt="">
@@ -277,8 +322,8 @@
                 </div>
                 <!-- cards end -->
                 <!-- Flights, and Hotels start -->
-                <div class="flex gap-[24px]">
-                    <div class="max-w-[604px] w-full rounded-[24px]"
+                <div class="md:flex gap-[24px]">
+                    <div class="mb-[20px] md:mb-0 max-w-[604px] w-full rounded-[24px]"
                         style="background-image: url(./img/plan/flights.png); background-repeat: no-repeat; background-size: cover;">
                         <div class="pt-[372px] pb-[16px] text-center">
                             <h4 class="mb-[8px] font-bold text-[40px] text-white leading-[50.52px]">Flights</h4>
@@ -317,13 +362,13 @@
     </section>
     <!-- Plan end -->
     <!-- Rewievs start -->
-    <section>
+    <section class="">
         <div class="max-w-[1256px] mx-auto px-5">
             <div>
-                <div class="flex items-center justify-between mb-[40px]">
+                <div class="md:flex items-center justify-between mb-[40px]">
                     <div>
-                        <h2 class="mb-[16px] font-semibold text-[32px] leading-[39.01px] text-[#000000]">Reviews</h2>
-                        <p class="font-normal text-[16px[] leading-[19.5px] text-[#112211]">What people says about
+                        <h2 class="md:mb-[16px] font-semibold text-[32px] leading-[39.01px] text-[#000000]">Reviews</h2>
+                        <p class="mb-[20px] md:mb-0 font-normal text-[16px[] leading-[19.5px] text-[#112211]">What people says about
                             Golobe facilities</p>
                     </div>
                     <div>
@@ -629,7 +674,7 @@
                 <!-- swipers end -->
             </div>
             <!-- mb-- start -->
-            <div class="mb-[-180px] relative z-50 max-w-[1232px] flex justify-between rounded-[20px] pt-[24px] px-[24px] bg-[#CDEAE1]"
+            <div class=" mb-[-180px] relative z-50 max-w-[1232px] hidden md:flex justify-between rounded-[20px] pt-[24px] px-[24px] bg-[#CDEAE1]"
                 style="box-shadow: 0px 4px 16px 0px #1122110D;">
                 <div>
                     <h4 class="mb-[24px] font-bold text-[44px] leading-[54px] text-[#112211] max-w-[364px]">Subscribe
@@ -653,99 +698,99 @@
     </section>
     <!-- Rewievs end -->
     <!-- Footer start -->
-    <footer class="bg-[#8DD3BB] pt-[218px] pb-[64px]">
+    <footer class="bg-[#8DD3BB] pt-[30px] md:pt-[218px] pb-[64px]">
         <div class="max-w-[1256px] mx-auto px-5 flex">
-            <div class="mr-[140px]">
+            <div class="md:mr-[140px]">
                 <a class="" href="#">
                     <img class="mb-[24px]" src="./img/footer/footer-logo.svg" alt="">
                 </a>
-                <div class="flex gap-[12px]">
+                <div class="md:flex grid grid-cols-2 md:gap-[12px]">
                     <img src="./img/footer/facebook-icon.svg" alt="">
                     <img src="./img/footer/twitter-icon.svg" alt="">
                     <img src="./img/footer/youtube-icon.svg" alt="">
                     <img src="./img/footer/instagram-icon.svg" alt="">
                 </div>
             </div>
-            <div class="flex gap-[74px]">
-                    <ul class="gap-[12px] flex flex-col">
-                        <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Our Destinations</li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Canada</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Alaksa</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">France</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Iceland</a>
-                        </li>
-                    </ul>
-                    <ul class="gap-[12px] flex flex-col">
-                        <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Our Activities</li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Northern Lights</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Cruising & sailing</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Multi-activities</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Kayaing</a>
-                        </li>
-                    </ul>
-                    <ul class="gap-[12px] flex flex-col">
-                        <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Travel Blogs</li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Bali Travel Guide</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Sri Lanks Travel Guide</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Peru Travel Guide</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Bali Travel Guide</a>
-                        </li>
-                    </ul>
-                    <ul class="gap-[12px] flex flex-col">
-                        <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">About Us</li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Our Story</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Work with us</a>
-                        </li>
-                    </ul>
-                    <ul class="gap-[12px] flex flex-col">
-                        <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Contact Us</li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Our Story</a>
-                        </li>
-                        <li>
-                            <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
-                                href="">Work with us</a>
-                        </li>
-                    </ul>
+            <div class="md:flex grid grid-cols-2 gap-[32px] md:gap-[74px]">
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Our Destinations</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Canada</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Alaksa</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">France</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Iceland</a>
+                    </li>
+                </ul>
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Our Activities</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Northern Lights</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Cruising & sailing</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Multi-activities</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Kayaing</a>
+                    </li>
+                </ul>
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Travel Blogs</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Bali
+                            Travel Guide</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Sri
+                            Lanks Travel Guide</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Peru
+                            Travel Guide</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Bali
+                            Travel Guide</a>
+                    </li>
+                </ul>
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">About Us</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Our
+                            Story</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Work
+                            with us</a>
+                    </li>
+                </ul>
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Contact Us</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Our
+                            Story</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Work
+                            with us</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
@@ -756,16 +801,29 @@
     <!-- Footer end -->
 
     <!-- swiper js  -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2.5,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+            slidesPerView: 1.3,
+            spaceBetween: 20,
+            breakpoints: {
+        640: {
+            centeredSlides: true,
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+        },
+      },
         });
     </script>
 
