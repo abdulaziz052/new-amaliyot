@@ -526,6 +526,9 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-\[12px\] {
+  margin-bottom: 12px;
+}
 .mb-\[16px\] {
   margin-bottom: 16px;
 }
@@ -544,8 +547,14 @@ video {
 .mb-\[80px\] {
   margin-bottom: 80px;
 }
+.mb-\[8px\] {
+  margin-bottom: 8px;
+}
 .ml-\[-30px\] {
   margin-left: -30px;
+}
+.ml-\[12px\] {
+  margin-left: 12px;
 }
 .ml-\[24px\] {
   margin-left: 24px;
@@ -559,8 +568,14 @@ video {
 .mt-\[-130px\] {
   margin-top: -130px;
 }
-.mb-\[8px\] {
-  margin-bottom: 8px;
+.mb-\[\] {
+  margin-bottom: ;
+}
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+.block {
+  display: block;
 }
 .flex {
   display: flex;
@@ -571,17 +586,14 @@ video {
 .w-\[100px\] {
   width: 100px;
 }
-.w-\[604px\] {
-  width: 604px;
+.w-\[144px\] {
+  width: 144px;
 }
 .w-\[90px\] {
   width: 90px;
 }
 .w-full {
   width: 100%;
-}
-.w-\[144px\] {
-  width: 144px;
 }
 .max-w-\[1232px\] {
   max-width: 1232px;
@@ -598,17 +610,14 @@ video {
 .max-w-\[389\.33px\] {
   max-width: 389.33px;
 }
-.max-w-\[604px\] {
-  max-width: 604px;
-}
-.max-w-\[\] {
-  max-width: ;
-}
-.max-w-\[3879px\] {
-  max-width: 3879px;
-}
 .max-w-\[389px\] {
   max-width: 389px;
+}
+.max-w-\[425px\] {
+  max-width: 425px;
+}
+.max-w-\[604px\] {
+  max-width: 604px;
 }
 .list-disc {
   list-style-type: disc;
@@ -624,6 +633,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-\[13px\] {
+  gap: 13px;
 }
 .gap-\[16px\] {
   gap: 16px;
@@ -643,17 +655,26 @@ video {
 .gap-\[8px\] {
   gap: 8px;
 }
+.gap-\[\] {
+  gap: ;
+}
 .rounded-\[10px\] {
   border-radius: 10px;
 }
 .rounded-\[16px\] {
   border-radius: 16px;
 }
+.rounded-\[24px\] {
+  border-radius: 24px;
+}
 .rounded-\[4px\] {
   border-radius: 4px;
 }
-.rounded-\[24px\] {
-  border-radius: 24px;
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+.rounded {
+  border-radius: 0.25rem;
 }
 .border-2 {
   border-width: 2px;
@@ -719,6 +740,10 @@ video {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.py-\[24px\] {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .pb-\[16px\] {
   padding-bottom: 16px;
 }
@@ -730,6 +755,9 @@ video {
 }
 .pb-\[32px\] {
   padding-bottom: 32px;
+}
+.pb-\[70px\] {
+  padding-bottom: 70px;
 }
 .pl-\[16px\] {
   padding-left: 16px;
@@ -749,20 +777,32 @@ video {
 .pt-\[30px\] {
   padding-top: 30px;
 }
+.pt-\[372px\] {
+  padding-top: 372px;
+}
 .pt-\[54px\] {
   padding-top: 54px;
 }
 .pt-\[80px\] {
   padding-top: 80px;
 }
+.pb-\[\] {
+  padding-bottom: ;
+}
+.pb-\[24px\] {
+  padding-bottom: 24px;
+}
 .pt-\[\] {
   padding-top: ;
 }
-.pt-\[372px\] {
-  padding-top: 372px;
+.pt-\[24px\] {
+  padding-top: 24px;
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .text-\[14px\] {
   font-size: 14px;
@@ -773,8 +813,14 @@ video {
 .text-\[20px\] {
   font-size: 20px;
 }
+.text-\[24px\] {
+  font-size: 24px;
+}
 .text-\[32px\] {
   font-size: 32px;
+}
+.text-\[40px\] {
+  font-size: 40px;
 }
 .text-\[45px\] {
   font-size: 45px;
@@ -782,8 +828,8 @@ video {
 .text-\[80px\] {
   font-size: 80px;
 }
-.text-\[40px\] {
-  font-size: 40px;
+.text-\[12px\] {
+  font-size: 12px;
 }
 .font-bold {
   font-weight: 700;
@@ -800,14 +846,26 @@ video {
 .leading-\[101\.04px\] {
   line-height: 101.04px;
 }
+.leading-\[17\.07px\] {
+  line-height: 17.07px;
+}
+.leading-\[17\.68px\] {
+  line-height: 17.68px;
+}
 .leading-\[19\.5px\] {
   line-height: 19.5px;
 }
 .leading-\[24\.38px\] {
   line-height: 24.38px;
 }
+.leading-\[30\.31px\] {
+  line-height: 30.31px;
+}
 .leading-\[39\.01px\] {
   line-height: 39.01px;
+}
+.leading-\[50\.52px\] {
+  line-height: 50.52px;
 }
 .leading-\[56\.84px\] {
   line-height: 56.84px;
@@ -815,8 +873,11 @@ video {
 .leading-\[\] {
   line-height: ;
 }
-.leading-\[50\.52px\] {
-  line-height: 50.52px;
+.leading-\[14\.63px\] {
+  line-height: 14.63px;
+}
+.leading-\[15\.16px\] {
+  line-height: 15.16px;
 }
 .text-\[\#000000\] {
   --tw-text-opacity: 1;
@@ -837,6 +898,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.opacity-\[50\%\] {
+  opacity: 50%;
+}
+.opacity-\[\] {
+  opacity: ;
+}
+.opacity-\[40\%\] {
+  opacity: 40%;
 }
 .outline-none {
   outline: 2px solid transparent;
