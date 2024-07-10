@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <div class="max-w-[1256px] mx-auto px-5">
+            <div class="flex justify-between items-center">
+                <ul class="hidden md:flex gap-[32px] items-center pt-[30px]">
+                    <li>
+                        <a class="hover:border-b-[4px] pb-[22px]  border-b-[4px] border-white hover:border-[#8DD3BB]  flex items-center text-black font-semibold text-[14px] gap-[4px]"
+                            href="#">
+                            <img src="./img/flight-search/header/airplane.svg" alt="">
+                            Find Flight
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" hover:border-b-[4px] pb-[22px] border-b-[4px] border-white hover:border-[#8DD3BB]  flex items-center text-black font-semibold text-[14px] gap-[4px]"
+                            href="#">
+                            <img src="./img/flight-search/header/bed.svg" alt="">
+                            Find Stays
+                        </a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <img src="./img/flight-search/header/logo.svg" alt="">
+                </a>
+                <ul class="hidden md:flex gap-[32px]">
+                    <li>
+                        <a class="pb-[12px] text-black font-semibold text-[14px]" href="#">Login</a>
+                    </li>
+                    <li>
+                        <a class="text-white bg-black py-[15px] px-[24px] rounded-[10px] font-semibold text-[14px]"
+                            href="#">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Hero start -->
+    <section style=" background-image: url(./img/flight-search/hero/hero-bg.png);" class="bg-cover bg-no-repeat">
+        <div class="max-w-[1256px] mx-auto px-5">
+            <div class="pt-[80px] pb-[254px]">
+                <h1 class="mb-[8px] font-bold text-[45px] leading-[56.84px] text-white max-w-[440px]">Make your travel
+                    whishlist, we’ll do the rest</h1>
+                <p class="font-medium text-[20px] leading-[24.38px] text-white">Special offers to suit your plan</p>
+            </div>
+        </div>
+    </section>
+    <!-- Hero end -->
+
+    <!-- Let's go places together start-->
+    <section>
+        <div class="max-w-[1256px] mx-auto px-5">
+            <!-- mt-- start -->
+            <div style="box-shadow: 0px 4px 16px 0px #8DD3BB26;"
+                class="hidden md:block max-w-[1232px] w-full pr-[16px] pt-[16px] pb-[16px] pl-[32px] rounded-[16px] mt-[-100px] bg-white">
+                <div>
+                    <ul class="flex gap-[32px] mb-[32px]">
+                        <li>
+                            <a class="gap-[8px]  flex items-center font-semibold text-[20px] text-[#112211]" href="#">
+                                Where are you flying?
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pb-[32px]">
+                        <form class="relative mb-[32px]" action="">
+                            <label class="flex items-center" for="">
+                                <input placeholder="Lahore - Karachi"
+                                    class="rounded-[4px] border-[#79747E] text-[#1C1B1F] max-w-[324px] w-full py-[10px] border-[2px] outline-none pl-[16px]"
+                                    type="text" required>
+                                <img class="ml-[-30px]" src="./img/plan/swaper.svg" alt="">
+                                <span class="bg-white absolute left-[16px] bottom-[35px]">From - To</span>
+                                <select
+                                    class="text-[16px] rounded-[4px] font-normal border-[#79747E] border-[2px] outline-none  ml-[24px] py-[10px] max-w-[140px] w-full"
+                                    name="" id="">
+                                    <option value="">Return</option>
+                                    <option value="">Return</option>
+                                    <option value="">Return</option>
+                                </select>
+                                <span class="bg-white absolute bottom-[35px] left-[350px]">Trip</span>
+                                <input placeholder="07 Nov 22 - 13 Nov 22"
+                                    class="ml-[24px] rounded-[4px] border-[#79747E] text-[#1C1B1F] max-w-[324px] w-full py-[10px] border-[2px] outline-none pl-[16px]"
+                                    type="text" required>
+                                <span class="bg-white absolute bottom-[35px] left-[520px]">Depart- Return</span>
+                                <input placeholder="1 Passenger, Economy"
+                                    class="ml-[24px] rounded-[4px] border-[#79747E] text-[#1C1B1F] max-w-[324px] w-full py-[10px] border-[2px] outline-none pl-[16px]"
+                                    type="text" required>
+                                <span class="bg-white absolute bottom-[35px] right-[190px]">Passenger - Class</span>
+                            </label>
+                        </form>
+                        <div class="flex gap-[24px] ml-auto justify-end">
+                            <a class="flex items-center gap-[4px]" href="">
+                                <img src="./img/plan/add-outline.svg" alt="">
+                                Add Promo Code
+                            </a>
+                            <a class="flex items-center gap-[4px] py-[15px] bg-[#8DD3BB] px-[16px] rounded-[4px]"
+                                href="">
+                                <img src="./img/plan/Paper Plane.svg" alt="">
+                                Show Filghts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mt-- end -->
+            <div class="pt-[80px]">
+                <div class="flex justify-between items-center mb-[24px]">
+                    <div>
+                        <h2 class="mb-[16px] font-semibold text-[32px] leading-[39.01px]">Let's go places together</h2>
+                        <p class="font-normal text-[16px] leading-[19.5px]">Discover the latest offers and news and
+                            start planning your next trip with us.</p>
+                    </div>
+                    <div>
+                        <a class="py-[11px] px-[16px] bg-inherit border-2 border-[#8DD3BB] rounded-[4px]" href="">See
+                            All</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <img class="w-full h-[486px]" src="./img/flight-search/go-places-together/map.png" alt="">
+    </section>
+    <!-- Let's go places together end-->
+
+
+    <!-- Fall into travel start -->
+    <section class="pt-[80px]">
+        <div class="max-w-[1256px] mx-auto px-5">
+            <div class="flex justify-between items-center mb-[40px]">
+                <div>
+                    <h2 class="font-semibold text-[32px] leading-[39.01px]">
+                        Fall into travel
+                    </h2>
+                    <p class="max-w-[851px] font-normal text-[16px] leading-[19.5px]">Going somewhere to celebrate this
+                        season? Whether you’re going home or somewhere to roam, we’ve
+                        got the travel tools to get you to your destination.</p>
+                </div>
+                <div>
+                    <a class="py-[11px] px-[16px] bg-inherit border-2  border-[#8DD3BB] rounded-[4px]" href="">
+                        See All
+                    </a>
+                </div>
+            </div>
+            <div>
+                <!-- cards start -->
+                <div class="flex gap-[16px]">
+                    <div style="background-image: url(./img/flight-search/fall-into-travel/card-1.png);"
+                        class="max-w-[296px] rounded-[12px] w-full bg-cover bg-no-repeat px-[24px] pb-[24px]">
+                        <div class="mb-[16px] flex items-end mx-auto pt-[286px] justify-between">
+                            <div>
+                                <h4 class="font-semibold text-[24px] leading-[29.26px] text-white">Melbourne</h4>
+                                <p class="font-normal text-[14px] leading-[17.07px] text-white">An amazing journey</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-[24px] leading-[29.26px] text-white">$ 700</span>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <button class="font-medium text-[14px] py-[15px] px-[82px] bg-[#8DD3BB] rounded-[4px]">Book
+                            Flight</button>
+                    </div>
+                    <div style="background-image: url(./img/flight-search/fall-into-travel/card-2.png);"
+                        class="max-w-[296px] rounded-[12px] w-full bg-cover bg-no-repeat px-[24px] pb-[24px]">
+                        <div class="mb-[16px] flex items-end mx-auto pt-[286px] justify-between">
+                            <div>
+                                <h4 class="font-semibold text-[24px] leading-[29.26px] text-white">Paris</h4>
+                                <p class="font-normal text-[14px] leading-[17.07px] text-white">A Paris Adventure</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-[24px] leading-[29.26px] text-white">$ 600</span>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <button class="font-medium text-[14px] py-[15px] px-[82px] bg-[#8DD3BB] rounded-[4px]">Book
+                            Flight</button>
+                    </div>
+                    <div style="background-image: url(./img/flight-search/fall-into-travel/card-3.png);"
+                        class="max-w-[296px] rounded-[12px] w-full bg-cover bg-no-repeat px-[24px] pb-[24px]">
+                        <div class="mb-[16px] flex items-end mx-auto pt-[286px] justify-between">
+                            <div>
+                                <h4 class="font-semibold text-[24px] leading-[29.26px] text-white">London</h4>
+                                <p class="font-normal text-[14px] leading-[17.07px] text-white">London eye adventure</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-[24px] leading-[29.26px] text-white">$ 350</span>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <button class="font-medium text-[14px] py-[15px] px-[82px] bg-[#8DD3BB] rounded-[4px]">Book
+                            Flight</button>
+                    </div>
+                    <div style="background-image: url(./img/flight-search/fall-into-travel/card-4.png);"
+                        class="max-w-[296px] rounded-[12px] w-full bg-cover bg-no-repeat px-[24px] pb-[24px]">
+                        <div class="mb-[16px] flex items-end mx-auto pt-[286px] justify-between">
+                            <div>
+                                <h4 class="font-semibold text-[24px] leading-[29.26px] text-white">Columbia</h4>
+                                <p class="font-normal text-[14px] leading-[17.07px] text-white">Amazing streets</p>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-[24px] leading-[29.26px] text-white">$ 700</span>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <button class="font-medium text-[14px] py-[15px] px-[82px] bg-[#8DD3BB] rounded-[4px]">Book
+                            Flight</button>
+                    </div>
+                </div>
+                <!-- cards end -->
+            </div>
+        </div>
+    </section>
+    <!-- Fall into travel end -->
+    <!-- Fall into travel-2 start -->
+    <section class="pt-[80px]">
+        <div class="max-w-[1256px] mx-auto px-5">
+            <div class="flex justify-between items-center mb-[40px]">
+                <div>
+                    <h2 class="mb-[16px] font-semibold text-[32px] leading-[39.01px]">
+                        Fall into travel
+                    </h2>
+                    <p class="max-w-[1120px] font-normal text-[16px] leading-[19.5px]">Going somewhere to celebrate this
+                        season? Whether you’re going home or somewhere to roam, we’ve
+                        got the travel tools to get you to your destination.</p>
+                </div>
+                <div>
+                    <a class="py-[11px] px-[16px] bg-inherit border-2  border-[#8DD3BB] rounded-[4px]" href="">
+                        See All
+                    </a>
+                </div>
+            </div>
+            <div class="max-w-[552px] bg-[#8DD3BB] py-[24px] px-[24px] rounded-[20px]">
+                <div class="flex items-start justify-between mb-[24px]">
+                    <h4 class=" font-bold text-[40px] leading-[50.52px] text-[#112211]">Backpacking <br> Sri Lanka</h4>
+                    <div class="text-center w-[68px] rounded-[8px] py-[8px] px-[8px] bg-white">
+                        <p class="font-normal text-[14px] leading-[17.74px] text-[#112211]">From</p>
+                        <span class="font-semibold text-[20px] leading-[24.38px] text-[#112211]">$700</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="mb-[120px] max-w-[504px] font-normal text-[14px] leading-[17.07px] text-[#112211]">Traveling is a unique experience as it's the best way to unplug from the pushes and pulls of
+                        daily life. It helps us to forget about our problems, frustrations, and fears at home. During
+                        our journey, we experience life in different ways. We explore new places, cultures, cuisines,
+                        traditions, and ways of living.</p>
+                </div>
+                <button class="py-[15px] px-[210px] bg-white text-black font-medium text-[14px] leading-[17.07px] rounded-[4px]">
+                    Book Flight
+                </button>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Fall into travel-2 end -->
+
+</body>
+
+</html>
