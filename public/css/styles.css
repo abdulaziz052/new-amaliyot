@@ -598,6 +598,9 @@ video {
 .mt-\[-130px\] {
   margin-top: -130px;
 }
+.mb-\[\] {
+  margin-bottom: ;
+}
 .block {
   display: block;
 }
@@ -732,6 +735,9 @@ video {
 }
 .gap-\[8px\] {
   gap: 8px;
+}
+.gap-\[10px\] {
+  gap: 10px;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1123,6 +1129,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:gap-\[12px\] {
     gap: 12px;
   }
@@ -1133,6 +1143,14 @@ video {
 
   .md\:gap-\[74px\] {
     gap: 74px;
+  }
+
+  .md\:gap-\[20px\] {
+    gap: 20px;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
   }
 
   .md\:rounded-\[24px\] {
