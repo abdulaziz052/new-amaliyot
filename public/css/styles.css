@@ -598,17 +598,29 @@ video {
 .mt-\[-130px\] {
   margin-top: -130px;
 }
-.mb-0 {
-  margin-bottom: 0px;
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
-.mb-\[\] {
-  margin-bottom: ;
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
-.ml-\[20px\] {
-  margin-left: 20px;
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
-.ml-\[40px\] {
-  margin-left: 40px;
+.line-clamp-6 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
 }
 .block {
   display: block;
@@ -706,6 +718,14 @@ video {
 .list-disc {
   list-style-type: disc;
 }
+.columns-5 {
+  -moz-columns: 5;
+       columns: 5;
+}
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -766,11 +786,11 @@ video {
 .gap-\[4px\] {
   gap: 4px;
 }
-.gap-\[8px\] {
-  gap: 8px;
-}
 .gap-\[80px\] {
   gap: 80px;
+}
+.gap-\[8px\] {
+  gap: 8px;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -819,15 +839,6 @@ video {
 }
 .border-t-\[4px\] {
   border-top-width: 4px;
-}
-.border-l-2 {
-  border-left-width: 2px;
-}
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-.border-t-2 {
-  border-top-width: 2px;
 }
 .border-\[\#79747E\] {
   --tw-border-opacity: 1;
@@ -884,9 +895,6 @@ video {
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
-.p-\[32px\] {
-  padding: 32px;
-}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -894,6 +902,10 @@ video {
 .px-\[11px\] {
   padding-left: 11px;
   padding-right: 11px;
+}
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .px-\[14px\] {
   padding-left: 14px;
@@ -951,17 +963,13 @@ video {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.py-\[8px\] {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
 .py-\[32px\] {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.px-\[12px\] {
-  padding-left: 12px;
-  padding-right: 12px;
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .pb-\[12px\] {
   padding-bottom: 12px;
@@ -1005,6 +1013,9 @@ video {
 .pb-\[70px\] {
   padding-bottom: 70px;
 }
+.pl-\[12px\] {
+  padding-left: 12px;
+}
 .pl-\[16px\] {
   padding-left: 16px;
 }
@@ -1013,6 +1024,9 @@ video {
 }
 .pr-\[16px\] {
   padding-right: 16px;
+}
+.pr-\[24px\] {
+  padding-right: 24px;
 }
 .pr-\[32px\] {
   padding-right: 32px;
@@ -1032,9 +1046,6 @@ video {
 .pt-\[30px\] {
   padding-top: 30px;
 }
-.pt-\[32px\] {
-  padding-top: 32px;
-}
 .pt-\[372px\] {
   padding-top: 372px;
 }
@@ -1046,18 +1057,6 @@ video {
 }
 .pt-\[80px\] {
   padding-top: 80px;
-}
-.pr-\[\] {
-  padding-right: ;
-}
-.pr-\[24px\] {
-  padding-right: 24px;
-}
-.pl-\[24px\] {
-  padding-left: 24px;
-}
-.pl-\[12px\] {
-  padding-left: 12px;
 }
 .text-center {
   text-align: center;
@@ -1190,6 +1189,9 @@ video {
 .opacity-\[50\%\] {
   opacity: 50%;
 }
+.opacity-\[60\%\] {
+  opacity: 60%;
+}
 .opacity-\[70\%\] {
   opacity: 70%;
 }
@@ -1198,9 +1200,6 @@ video {
 }
 .opacity-\[80\%\] {
   opacity: 80%;
-}
-.opacity-\[60\%\] {
-  opacity: 60%;
 }
 .outline-none {
   outline: 2px solid transparent;
@@ -1222,11 +1221,6 @@ video {
 }
 @media (min-width: 768px) {
 
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1237,10 +1231,6 @@ video {
 
   .md\:mr-\[140px\] {
     margin-right: 140px;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
   }
 
   .md\:block {
@@ -1303,14 +1293,18 @@ video {
     background-size: cover;
   }
 
+  .md\:px-\[24px\] {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .md\:py-\[30px\] {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  .md\:px-\[24px\] {
+  .md\:pl-\[24px\] {
     padding-left: 24px;
-    padding-right: 24px;
   }
 
   .md\:pt-0 {
@@ -1319,10 +1313,6 @@ video {
 
   .md\:pt-\[218px\] {
     padding-top: 218px;
-  }
-
-  .md\:pl-\[24px\] {
-    padding-left: 24px;
   }
 
   .md\:text-\[16px\] {
