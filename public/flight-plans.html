@@ -10,6 +10,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                     <i class="fa-solid fa-xl fa-bars" style="color: #000000;"></i>
                 </button>
                 <div style="transition: all .5s; background-image: url(./img/plan/flights.png);" id="responsive-menu"
-                    class=" bg-center bg-no-repeat px-[24px] pt-[24px] pb-[290px] w-full mx-auto fixed top-0 -left-full">
+                    class="z-50 bg-center bg-no-repeat px-[24px] pt-[24px] pb-[290px] w-full mx-auto fixed top-0 -left-full">
                     <div class="flex items-center justify-between mb-[40px]">
                         <a href="">
                             <img class="" src="./img/header/Logo.svg" alt="">
@@ -165,7 +166,7 @@
                     </label>
                 </form>
             </div>
-            <div class="flex gap-[19px]">
+            <div class="hidden md:flex gap-[19px]">
                 <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-1.png" alt="">
                 <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-2.png" alt="">
                 <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-3.png" alt="">
@@ -176,6 +177,47 @@
                 <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-5.png" alt="">
                 <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-6.png" alt="">
             </div>
+            <div class="swiper mySwiper flex md:hidden">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-1.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-2.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-3.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-4.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-3.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-4.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-4.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-5.png" alt="">
+
+                  </div>
+                  <div class="swiper-slide">
+                <img class="w-[120px]  flex" src="./img/flight-plans/basic-economy-features/img-6.png" alt="">
+
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
         </div>
     </section>
     <!-- Basic Economy Features end -->
@@ -430,6 +472,24 @@
             </div>
         </div>
     </footer>
+
+
+
+
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    });
+  </script>
 
     <script src="./js/app.js"></script>
 
