@@ -516,11 +516,17 @@ video {
 .bottom-\[35px\] {
   bottom: 35px;
 }
+.bottom-\[37px\] {
+  bottom: 37px;
+}
 .left-0 {
   left: 0px;
 }
 .left-\[16px\] {
   left: 16px;
+}
+.left-\[345px\] {
+  left: 345px;
 }
 .left-\[350px\] {
   left: 350px;
@@ -528,8 +534,17 @@ video {
 .left-\[520px\] {
   left: 520px;
 }
+.left-\[610px\] {
+  left: 610px;
+}
+.right-\[180px\] {
+  right: 180px;
+}
 .right-\[190px\] {
   right: 190px;
+}
+.right-\[266px\] {
+  right: 266px;
 }
 .top-0 {
   top: 0px;
@@ -598,30 +613,6 @@ video {
 .mt-\[-130px\] {
   margin-top: -130px;
 }
-.line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-.line-clamp-3 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
-.line-clamp-6 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
-}
 .block {
   display: block;
 }
@@ -679,6 +670,9 @@ video {
 .max-w-\[140px\] {
   max-width: 140px;
 }
+.max-w-\[240px\] {
+  max-width: 240px;
+}
 .max-w-\[262px\] {
   max-width: 262px;
 }
@@ -717,14 +711,6 @@ video {
 }
 .list-disc {
   list-style-type: disc;
-}
-.columns-5 {
-  -moz-columns: 5;
-       columns: 5;
-}
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -943,6 +929,10 @@ video {
   padding-top: 11px;
   padding-bottom: 11px;
 }
+.py-\[12px\] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 .py-\[15px\] {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1022,6 +1012,15 @@ video {
 .pl-\[32px\] {
   padding-left: 32px;
 }
+.pl-\[34px\] {
+  padding-left: 34px;
+}
+.pl-\[40px\] {
+  padding-left: 40px;
+}
+.pr-\[12px\] {
+  padding-right: 12px;
+}
 .pr-\[16px\] {
   padding-right: 16px;
 }
@@ -1057,6 +1056,12 @@ video {
 }
 .pt-\[80px\] {
   padding-top: 80px;
+}
+.pr-\[14px\] {
+  padding-right: 14px;
+}
+.pr-\[44px\] {
+  padding-right: 44px;
 }
 .text-center {
   text-align: center;
@@ -1301,6 +1306,10 @@ video {
   .md\:py-\[30px\] {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:pl-\[24px\] {
