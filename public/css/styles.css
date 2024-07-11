@@ -598,6 +598,18 @@ video {
 .mt-\[-130px\] {
   margin-top: -130px;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
+.mb-\[\] {
+  margin-bottom: ;
+}
+.ml-\[20px\] {
+  margin-left: 20px;
+}
+.ml-\[40px\] {
+  margin-left: 40px;
+}
 .block {
   display: block;
 }
@@ -757,6 +769,9 @@ video {
 .gap-\[8px\] {
   gap: 8px;
 }
+.gap-\[80px\] {
+  gap: 80px;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -804,6 +819,15 @@ video {
 }
 .border-t-\[4px\] {
   border-top-width: 4px;
+}
+.border-l-2 {
+  border-left-width: 2px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+.border-t-2 {
+  border-top-width: 2px;
 }
 .border-\[\#79747E\] {
   --tw-border-opacity: 1;
@@ -859,6 +883,9 @@ video {
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+.p-\[32px\] {
+  padding: 32px;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -927,6 +954,14 @@ video {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.py-\[32px\] {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .pb-\[12px\] {
   padding-bottom: 12px;
@@ -1011,6 +1046,18 @@ video {
 }
 .pt-\[80px\] {
   padding-top: 80px;
+}
+.pr-\[\] {
+  padding-right: ;
+}
+.pr-\[24px\] {
+  padding-right: 24px;
+}
+.pl-\[24px\] {
+  padding-left: 24px;
+}
+.pl-\[12px\] {
+  padding-left: 12px;
 }
 .text-center {
   text-align: center;
@@ -1152,6 +1199,9 @@ video {
 .opacity-\[80\%\] {
   opacity: 80%;
 }
+.opacity-\[60\%\] {
+  opacity: 60%;
+}
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1172,6 +1222,11 @@ video {
 }
 @media (min-width: 768px) {
 
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1182,6 +1237,10 @@ video {
 
   .md\:mr-\[140px\] {
     margin-right: 140px;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
   }
 
   .md\:block {
@@ -1206,6 +1265,14 @@ video {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:gap-0 {
@@ -1241,12 +1308,21 @@ video {
     padding-bottom: 30px;
   }
 
+  .md\:px-\[24px\] {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
 
   .md\:pt-\[218px\] {
     padding-top: 218px;
+  }
+
+  .md\:pl-\[24px\] {
+    padding-left: 24px;
   }
 
   .md\:text-\[16px\] {
