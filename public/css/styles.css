@@ -549,6 +549,66 @@ video {
 .top-0 {
   top: 0px;
 }
+.left-\[355px\] {
+  left: 355px;
+}
+.left-\[620px\] {
+  left: 620px;
+}
+.left-\[35px\] {
+  left: 35px;
+}
+.left-\[375px\] {
+  left: 375px;
+}
+.left-\[385px\] {
+  left: 385px;
+}
+.left-\[395px\] {
+  left: 395px;
+}
+.left-\[405px\] {
+  left: 405px;
+}
+.left-\[410px\] {
+  left: 410px;
+}
+.left-\[420px\] {
+  left: 420px;
+}
+.left-\[670px\] {
+  left: 670px;
+}
+.left-\[680px\] {
+  left: 680px;
+}
+.right-\[10px\] {
+  right: 10px;
+}
+.right-\[150px\] {
+  right: 150px;
+}
+.right-\[130px\] {
+  right: 130px;
+}
+.right-\[120px\] {
+  right: 120px;
+}
+.right-\[110px\] {
+  right: 110px;
+}
+.right-\[286px\] {
+  right: 286px;
+}
+.right-\[2px\] {
+  right: 2px;
+}
+.right-\[236px\] {
+  right: 236px;
+}
+.right-\[200px\] {
+  right: 200px;
+}
 .z-50 {
   z-index: 50;
 }
@@ -613,6 +673,9 @@ video {
 .mt-\[-130px\] {
   margin-top: -130px;
 }
+.mb-\[10px\] {
+  margin-bottom: 10px;
+}
 .block {
   display: block;
 }
@@ -654,6 +717,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-\[8\] {
+  width: 8;
 }
 .max-w-\[1120px\] {
   max-width: 1120px;
@@ -708,6 +774,15 @@ video {
 }
 .max-w-\[851px\] {
   max-width: 851px;
+}
+.max-w-\[416px\] {
+  max-width: 416px;
+}
+.max-w-\[\] {
+  max-width: ;
+}
+.max-w-\[238px\] {
+  max-width: 238px;
 }
 .list-disc {
   list-style-type: disc;
@@ -777,6 +852,9 @@ video {
 }
 .gap-\[8px\] {
   gap: 8px;
+}
+.gap-\[91px\] {
+  gap: 91px;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -960,6 +1038,10 @@ video {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.py-\[80px\] {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .pb-\[12px\] {
   padding-bottom: 12px;
@@ -1153,6 +1235,12 @@ video {
 .leading-\[54px\] {
   line-height: 54px;
 }
+.leading-\[40\.42px\] {
+  line-height: 40.42px;
+}
+.leading-\[\] {
+  line-height: ;
+}
 .text-\[\#000000\] {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1284,6 +1372,10 @@ video {
 
   .md\:gap-\[74px\] {
     gap: 74px;
+  }
+
+  .md\:gap-\[91px\] {
+    gap: 91px;
   }
 
   .md\:rounded-\[24px\] {
