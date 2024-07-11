@@ -586,6 +586,9 @@ video {
 .mb-\[48px\] {
   margin-bottom: 48px;
 }
+.mb-\[64px\] {
+  margin-bottom: 64px;
+}
 .mb-\[80px\] {
   margin-bottom: 80px;
 }
@@ -619,32 +622,8 @@ video {
 .mt-\[-130px\] {
   margin-top: -130px;
 }
-.mb-\[38px\] {
-  margin-bottom: 38px;
-}
-.mb-\[42px\] {
-  margin-bottom: 42px;
-}
-.mb-\[50px\] {
-  margin-bottom: 50px;
-}
-.mb-\[52px\] {
-  margin-bottom: 52px;
-}
-.mb-\[56px\] {
-  margin-bottom: 56px;
-}
-.mb-\[58px\] {
-  margin-bottom: 58px;
-}
-.mb-\[60px\] {
-  margin-bottom: 60px;
-}
-.mb-\[62px\] {
-  margin-bottom: 62px;
-}
-.mb-\[64px\] {
-  margin-bottom: 64px;
+.mb-\[\] {
+  margin-bottom: ;
 }
 .block {
   display: block;
@@ -672,6 +651,9 @@ video {
 }
 .w-\[45px\] {
   width: 45px;
+}
+.w-\[48px\] {
+  width: 48px;
 }
 .w-\[593px\] {
   width: 593px;
@@ -754,6 +736,9 @@ video {
 .max-w-\[851px\] {
   max-width: 851px;
 }
+.max-w-\[12\] {
+  max-width: 12;
+}
 .list-disc {
   list-style-type: disc;
 }
@@ -817,11 +802,23 @@ video {
 .gap-\[4px\] {
   gap: 4px;
 }
+.gap-\[64px\] {
+  gap: 64px;
+}
 .gap-\[80px\] {
   gap: 80px;
 }
 .gap-\[8px\] {
   gap: 8px;
+}
+.gap-\[\] {
+  gap: ;
+}
+.gap-\[23\] {
+  gap: 23;
+}
+.gap-\[2px\] {
+  gap: 2px;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -850,6 +847,12 @@ video {
 .rounded-none {
   border-radius: 0px;
 }
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-\[\#8DD3BB\] {
+  border-radius: #8DD3BB;
+}
 .border-2 {
   border-width: 2px;
 }
@@ -858,9 +861,6 @@ video {
 }
 .border-\[2px\] {
   border-width: 2px;
-}
-.border-\[1px\] {
-  border-width: 1px;
 }
 .border-b-\[4px\] {
   border-bottom-width: 4px;
@@ -897,13 +897,6 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.border-\[\] {
-  border-color: ;
-}
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 .bg-\[\#112211\] {
   --tw-bg-opacity: 1;
@@ -1020,17 +1013,9 @@ video {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.py-\[26px\] {
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-.py-\[28px\] {
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
-.py-\[px\] {
-  padding-top: px;
-  padding-bottom: px;
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
 }
 .pb-\[12px\] {
   padding-bottom: 12px;
@@ -1226,9 +1211,6 @@ video {
 }
 .leading-\[54px\] {
   line-height: 54px;
-}
-.leading-3 {
-  line-height: .75rem;
 }
 .text-\[\#000000\] {
   --tw-text-opacity: 1;
