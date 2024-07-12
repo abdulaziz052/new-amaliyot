@@ -41,7 +41,7 @@
                     <i class="fa-solid fa-xl fa-bars" style="color: #000000;"></i>
                 </button>
                 <div style="transition: all .5s; background-image: url(./img/plan/flights.png);" id="responsive-menu"
-                    class="z-50 bg-center bg-no-repeat px-[24px] pt-[24px] pb-[290px] w-full mx-auto fixed top-0 -left-full">
+                    class="z-50 bg-center bg-no-repeat px-[24px] pt-[24px] pb-[390px] w-full mx-auto fixed top-0 -left-full">
                     <div class="flex items-center justify-between mb-[40px]">
                         <a href="">
                             <img class="" src="./img/header/Logo.svg" alt="">
@@ -109,31 +109,38 @@
                     Favourites
                 </h1>
                 <div>
-                    <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
-                        class="mb-[40px] flex pb-[5px] justify-between rounded-[12px] max-w-[1232px] w-full pt-[17px] px-[24px]">
-                        <div class="pr-[515px] border-r-[1px] border-[#D7E2EE]">
-                            <h4 class="mb-[8px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">
-                                Flights
-                            </h4>
-                            <p class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[40%]">2 marked
-                            </p>
-                        </div>
-                        <div class="pr-[500px] border-b-[4px] border-[#8DD3BB] pb-[17px]">
-                            <h4 class="mb-[8px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">Places</h4>
-                            <p class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[40%]">3 marked
-                            </p>
+                    <div class="">
+                        <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
+                            class="mb-[40px] md:flex pb-[5px] justify-between rounded-[12px] max-w-[1232px] w-full pt-[17px] px-[24px]">
+                            <div class="pr-0 md:pr-[515px] md:border-r-[1px] md:border-[#D7E2EE]">
+                                <h4 class="mb-[8px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">
+                                    Flights
+                                </h4>
+                                <p
+                                    class="mb-[10px] md:mb-0 font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[40%]">
+                                    2 marked
+                                </p>
+                            </div>
+                            <div class="pr-0 md:pr-[500px] md:border-b-[4px] md:border-[#8DD3BB] pb-[17px]">
+                                <h4 class="mb-[8px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">Places
+                                </h4>
+                                <p class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[40%]">3
+                                    marked
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="mb-[120px] flex flex-col gap-[24px]">
                         <!-- card -->
                         <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
-                            class="w-full  max-w-[1232px] rounded-[12px]">
-                            <div class="flex ">
+                            class="mx-auto w-full max-w-[300px]  md:max-w-[1232px] rounded-[12px]">
+                            <div class="md:flex ">
                                 <div>
-                                    <img class="max-w-[440px]" src="./img/favourites/hero/card-img-1.png" alt="">
+                                    <img class="max-w-[300px] rounded-[24px] md:rounded-[0px] md:max-w-[440px]"
+                                        src="./img/favourites/hero/card-img-1.png" alt="">
                                 </div>
-                                <div class=" flex justify-between px-[24px]">
-                                    <div class="pt-[24px] ml-[24px]">
+                                <div class=" md:flex px-[12px] justify-between md:px-[24px]">
+                                    <div class=" md:pt-[24px] md:ml-[24px]">
                                         <h4 class="mb-[16px] font-bold text-[20px] leading-[25.26px] text-[#112211]">CVK
                                             Park
                                             Bosphorus Hotel Istanbul</h4>
@@ -171,7 +178,7 @@
                                             <p class="font-bold text-[12px] leading-[14.63px]">Very Good <span
                                                     class="font-medium"> 371 reviews</span></p>
                                         </div>
-                                        <div class="pt-[14px] border-t-2 w-[704px]">
+                                        <div class="pt-[14px] md:border-t-2 md:w-[704px]">
 
                                         </div>
                                         <div class=" flex items-center gap-[18px]">
@@ -180,11 +187,11 @@
                                                 <img src="./img/favourites/hero/heart.svg" alt="">
                                             </a>
                                             <button
-                                                class="font-semibold text-[14px] bg-[#8DD3BB] py-[15px] w-[657px] rounded-[4px]">View
+                                                class="font-semibold text-[14px] bg-[#8DD3BB] py-[15px] w-[100px] md:w-[657px] rounded-[4px]">View
                                                 Place</button>
                                         </div>
                                     </div>
-                                    <div class="ml-[-100px]">
+                                    <div class="md:ml-[-100px]">
                                         <span
                                             class="text-left font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">starting
                                             from</span>
@@ -198,150 +205,154 @@
                             </div>
                         </div>
                         <!-- card end -->
-                        <!-- card -->
-                        <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
-                            class="w-full  max-w-[1232px] rounded-[12px]">
-                            <div class="flex ">
-                                <div>
-                                    <img class="max-w-[440px]" src="./img/favourites/hero/card-img-2.png" alt="">
+                <!-- card -->
+                <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
+                class="mx-auto w-full max-w-[300px]  md:max-w-[1232px] rounded-[12px]">
+                <div class="md:flex ">
+                    <div>
+                        <img class="max-w-[300px] rounded-[24px] md:rounded-[0px] md:max-w-[440px]"
+                            src="./img/favourites/hero/card-img-2.png" alt="">
+                    </div>
+                    <div class=" md:flex px-[12px] justify-between md:px-[24px]">
+                        <div class=" md:pt-[24px] md:ml-[24px]">
+                            <h4 class="mb-[16px] font-bold text-[20px] leading-[25.26px] text-[#112211]">CVK
+                                Park
+                                Bosphorus Hotel Istanbul</h4>
+                            <a class="mb-[12px] flex items-center gap-[2px] font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]"
+                                href="#">
+                                <img src="./img/favourites/hero/location.svg" alt="">
+                                Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437
+                            </a>
+                            <div class="mb-[12px] flex items-center gap-[32px]">
+                                <div class="flex items-center">
+                                    <img src="./img/favourites/hero/star.svg" alt="">
+                                    <img src="./img/favourites/hero/star.svg" alt="">
+                                    <img src="./img/favourites/hero/star.svg" alt="">
+                                    <img src="./img/favourites/hero/star.svg" alt="">
+                                    <img class="mr-[4px]" src="./img/favourites/hero/star.svg" alt="">
+                                    <p
+                                        class="line-clamp-1 font-medium text-[12px] leading-[14.63px] text-[#112211]">
+                                        5 Star
+                                        Hotel</p>
                                 </div>
-                                <div class="flex justify-between px-[24px]">
-                                    <div class="pt-[24px] ml-[24px]">
-                                        <h4 class="mb-[16px] font-bold text-[20px] leading-[25.26px] text-[#112211]">
-                                            Eresin Hotels Sultanahmet - Boutique Class</h4>
-                                        <a class="mb-[12px] flex items-center gap-[2px] font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]"
-                                            href="#">
-                                            <img src="./img/favourites/hero/location.svg" alt="">
-                                            Kucukayasofya No. 40 Sultanahmet, Istanbul 34022
-                                        </a>
-                                        <div class="mb-[12px] flex items-center gap-[32px]">
-                                            <div class="flex items-center">
-                                                <img src="./img/favourites/hero/star.svg" alt="">
-                                                <img src="./img/favourites/hero/star.svg" alt="">
-                                                <img src="./img/favourites/hero/star.svg" alt="">
-                                                <img src="./img/favourites/hero/star.svg" alt="">
-                                                <img class="mr-[4px]" src="./img/favourites/hero/star.svg" alt="">
-                                                <p
-                                                    class="line-clamp-1 font-medium text-[12px] leading-[14.63px] text-[#112211]">
-                                                    5 Star
-                                                    Hotel</p>
-                                            </div>
-                                            <div class="flex items-center">
-                                                <p
-                                                    class="font-medium text-[12px] leading-[14.63px] flex items-center gap-[4px]">
-                                                    <img src="./img/favourites/hero/cup.svg" alt="">
-                                                    <span class="font-bold text-[12px]  leading-[14.63px]">20+</span>
-                                                    Aminities
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="mb-[24px] flex items-center gap-[4px]">
-                                            <span
-                                                class="py-[8px] px-[11px] border-[1px] border-[#8DD3BB] rounded-[4px]">
-                                                4.2
-                                            </span>
-                                            <p class="font-bold text-[12px] leading-[14.63px]">Very Good <span
-                                                    class="font-medium"> 54 reviews</span></p>
-                                        </div>
-                                        <div class="pt-[14px] border-t-2 w-[704px]">
-
-                                        </div>
-                                        <div class=" flex items-center gap-[18px]">
-                                            <a class="rounded-[4px] border-[1px] border-[#8DD3BB] py-[16px] px-[15px]"
-                                                href="">
-                                                <img src="./img/favourites/hero/heart.svg" alt="">
-                                            </a>
-                                            <button
-                                                class="font-semibold text-[14px] bg-[#8DD3BB] py-[15px] w-[657px] rounded-[4px]">View
-                                                Place</button>
-                                        </div>
-                                    </div>
-                                    <div class="ml-[-100px]">
-                                        <span
-                                            class="text-left font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">starting
-                                            from</span>
-                                        <p class="font-bold text-[24px] leading-[29.26px] text-[#FF8682]">$104<span
-                                                class="font-bold text-[14px] leading-[17.07px]">/night</span></p>
-                                        <span
-                                            class=" text-right font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">excl.
-                                            tax</span>
-                                    </div>
+                                <div class="flex items-center">
+                                    <p
+                                        class="font-medium text-[12px] leading-[14.63px] flex items-center gap-[4px]">
+                                        <img src="./img/favourites/hero/cup.svg" alt="">
+                                        <span class="font-bold text-[12px]  leading-[14.63px]">20+</span>
+                                        Aminities
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                        <!-- card end -->
-                        <!-- card -->
-                        <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
-                            class="mb-[120px] w-full  max-w-[1232px] rounded-[12px]">
-                            <div class="flex ">
-                                <div>
-                                    <img class="max-w-[440px]" src="./img/favourites/hero/card-img-3.png" alt="">
-                                </div>
-                                <div class="flex justify-between px-[24px]">
-                                    <div class="pt-[24px] ml-[24px]">
-                                        <h4 class="mb-[16px] font-bold text-[20px] leading-[25.26px] text-[#112211]">
-                                            Eresin Hotels Sultanahmet - Boutique Class</h4>
-                                        <a class="mb-[12px] flex items-center gap-[2px] font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]"
-                                            href="#">
-                                            <img src="./img/favourites/hero/location.svg" alt="">
-                                            Kucukayasofya No. 40 Sultanahmet, Istanbul 34022
-                                        </a>
-                                        <div class="mb-[12px] flex items-center gap-[32px]">
-                                            <div class="flex items-center">
-                                                <img src="./img/favourites/hero/star.svg" alt="">
-                                                <img src="./img/favourites/hero/star.svg" alt="">
-                                                <img src="./img/favourites/hero/star.svg" alt="">
-                                                <img src="./img/favourites/hero/star.svg" alt="">
-                                                <img class="mr-[4px]" src="./img/favourites/hero/star.svg" alt="">
-                                                <p
-                                                    class="line-clamp-1 font-medium text-[12px] leading-[14.63px] text-[#112211]">
-                                                    5 Star
-                                                    Hotel</p>
-                                            </div>
-                                            <div class="flex items-center">
-                                                <p
-                                                    class="font-medium text-[12px] leading-[14.63px] flex items-center gap-[4px]">
-                                                    <img src="./img/favourites/hero/cup.svg" alt="">
-                                                    <span class="font-bold text-[12px]  leading-[14.63px]">20+</span>
-                                                    Aminities
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="mb-[24px] flex items-center gap-[4px]">
-                                            <span
-                                                class="py-[8px] px-[11px] border-[1px] border-[#8DD3BB] rounded-[4px]">
-                                                4.2
-                                            </span>
-                                            <p class="font-bold text-[12px] leading-[14.63px]">Very Good <span
-                                                    class="font-medium"> 54 reviews</span></p>
-                                        </div>
-                                        <div class="pt-[14px] border-t-2 w-[704px]">
+                            <div class="mb-[24px] flex items-center gap-[4px]">
+                                <span
+                                    class="py-[8px] px-[11px] border-[1px] border-[#8DD3BB] rounded-[4px]">
+                                    4.2
+                                </span>
+                                <p class="font-bold text-[12px] leading-[14.63px]">Very Good <span
+                                        class="font-medium"> 371 reviews</span></p>
+                            </div>
+                            <div class="pt-[14px] md:border-t-2 md:w-[704px]">
 
-                                        </div>
-                                        <div class=" flex items-center gap-[18px]">
-                                            <a class="rounded-[4px] border-[1px] border-[#8DD3BB] py-[16px] px-[15px]"
-                                                href="">
-                                                <img src="./img/favourites/hero/heart.svg" alt="">
-                                            </a>
-                                            <button
-                                                class="font-semibold text-[14px] bg-[#8DD3BB] py-[15px] w-[657px] rounded-[4px]">View
-                                                Place</button>
-                                        </div>
-                                    </div>
-                                    <div class="ml-[-100px]">
-                                        <span
-                                            class="text-left font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">starting
-                                            from</span>
-                                        <p class="font-bold text-[24px] leading-[29.26px] text-[#FF8682]">$104<span
-                                                class="font-bold text-[14px] leading-[17.07px]">/night</span></p>
-                                        <span
-                                            class=" text-right font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">excl.
-                                            tax</span>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class=" flex items-center gap-[18px]">
+                                <a class="rounded-[4px] border-[1px] border-[#8DD3BB] py-[16px] px-[15px]"
+                                    href="">
+                                    <img src="./img/favourites/hero/heart.svg" alt="">
+                                </a>
+                                <button
+                                    class="font-semibold text-[14px] bg-[#8DD3BB] py-[15px] w-[100px] md:w-[657px] rounded-[4px]">View
+                                    Place</button>
                             </div>
                         </div>
-                        <!-- card end -->
+                        <div class="md:ml-[-100px]">
+                            <span
+                                class="text-left font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">starting
+                                from</span>
+                            <p class="font-bold text-[24px] leading-[29.26px] text-[#FF8682]">$240<span
+                                    class="font-bold text-[14px] leading-[17.07px]">/night</span></p>
+                            <span
+                                class=" text-right font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">excl.
+                                tax</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card end -->
+               <!-- card -->
+               <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
+               class="mx-auto w-full max-w-[300px]  md:max-w-[1232px] rounded-[12px]">
+               <div class="md:flex ">
+                   <div>
+                       <img class="max-w-[300px] rounded-[24px] md:rounded-[0px] md:max-w-[440px]"
+                           src="./img/favourites/hero/card-img-3.png" alt="">
+                   </div>
+                   <div class=" md:flex px-[12px] justify-between md:px-[24px]">
+                       <div class=" md:pt-[24px] md:ml-[24px]">
+                           <h4 class="mb-[16px] font-bold text-[20px] leading-[25.26px] text-[#112211]">CVK
+                               Park
+                               Bosphorus Hotel Istanbul</h4>
+                           <a class="mb-[12px] flex items-center gap-[2px] font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]"
+                               href="#">
+                               <img src="./img/favourites/hero/location.svg" alt="">
+                               Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437
+                           </a>
+                           <div class="mb-[12px] flex items-center gap-[32px]">
+                               <div class="flex items-center">
+                                   <img src="./img/favourites/hero/star.svg" alt="">
+                                   <img src="./img/favourites/hero/star.svg" alt="">
+                                   <img src="./img/favourites/hero/star.svg" alt="">
+                                   <img src="./img/favourites/hero/star.svg" alt="">
+                                   <img class="mr-[4px]" src="./img/favourites/hero/star.svg" alt="">
+                                   <p
+                                       class="line-clamp-1 font-medium text-[12px] leading-[14.63px] text-[#112211]">
+                                       5 Star
+                                       Hotel</p>
+                               </div>
+                               <div class="flex items-center">
+                                   <p
+                                       class="font-medium text-[12px] leading-[14.63px] flex items-center gap-[4px]">
+                                       <img src="./img/favourites/hero/cup.svg" alt="">
+                                       <span class="font-bold text-[12px]  leading-[14.63px]">20+</span>
+                                       Aminities
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="mb-[24px] flex items-center gap-[4px]">
+                               <span
+                                   class="py-[8px] px-[11px] border-[1px] border-[#8DD3BB] rounded-[4px]">
+                                   4.2
+                               </span>
+                               <p class="font-bold text-[12px] leading-[14.63px]">Very Good <span
+                                       class="font-medium"> 371 reviews</span></p>
+                           </div>
+                           <div class="pt-[14px] md:border-t-2 md:w-[704px]">
+
+                           </div>
+                           <div class=" flex items-center gap-[18px]">
+                               <a class="rounded-[4px] border-[1px] border-[#8DD3BB] py-[16px] px-[15px]"
+                                   href="">
+                                   <img src="./img/favourites/hero/heart.svg" alt="">
+                               </a>
+                               <button
+                                   class="font-semibold text-[14px] bg-[#8DD3BB] py-[15px] w-[100px] md:w-[657px] rounded-[4px]">View
+                                   Place</button>
+                           </div>
+                       </div>
+                       <div class="md:ml-[-100px]">
+                           <span
+                               class="text-left font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">starting
+                               from</span>
+                           <p class="font-bold text-[24px] leading-[29.26px] text-[#FF8682]">$240<span
+                                   class="font-bold text-[14px] leading-[17.07px]">/night</span></p>
+                           <span
+                               class=" text-right font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">excl.
+                               tax</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- card end -->
                         <!-- mb-- start -->
                         <div class="mb-[-280px] relative z-50 max-w-[1232px] hidden md:flex justify-between rounded-[20px] pt-[24px] px-[24px] bg-[#CDEAE1]"
                             style="box-shadow: 0px 4px 16px 0px #1122110D;">

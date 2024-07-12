@@ -4,9 +4,7 @@ let ham__btn = document.querySelector('#hamburger-menu')
 let close__btn = document.querySelector('#close-menu')
 let body = document.querySelector('body')
 let box = document.querySelectorAll('#box')
-let pagination = document.querySelector('.swiper-pagination1')
 
-pagination.innerHTML = 'of'
 
 ham__btn.addEventListener('click', function () {
     resp.classList.remove('-left-full')
