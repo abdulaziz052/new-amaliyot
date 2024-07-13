@@ -811,6 +811,9 @@ video {
 .max-w-\[431px\] {
   max-width: 431px;
 }
+.max-w-\[742px\] {
+  max-width: 742px;
+}
 .list-disc {
   list-style-type: disc;
 }
@@ -1088,6 +1091,10 @@ video {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .pb-\[12px\] {
   padding-bottom: 12px;
@@ -1375,6 +1382,9 @@ video {
 }
 .opacity-\[80\%\] {
   opacity: 80%;
+}
+.opacity-\[0\2c 75\] {
+  opacity: 0,75;
 }
 .outline-none {
   outline: 2px solid transparent;
