@@ -928,6 +928,9 @@ video {
 .rounded-none {
   border-radius: 0px;
 }
+.rounded-\[\] {
+  border-radius: ;
+}
 .border-2 {
   border-width: 2px;
 }
