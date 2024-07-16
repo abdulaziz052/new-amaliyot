@@ -4,6 +4,9 @@
 
 
 .active{
-    background-color: #8DD3BB;
-    
+    background-color: #8DD3BB;   
+}
+
+input[type="radio"]:checked + label{
+    background-color: green;
 }
