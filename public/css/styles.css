@@ -649,6 +649,9 @@ video {
 .mt-\[-100px\] {
   margin-top: -100px;
 }
+.mt-\[-110px\] {
+  margin-top: -110px;
+}
 .mt-\[-130px\] {
   margin-top: -130px;
 }
@@ -658,8 +661,26 @@ video {
 .mt-\[24px\] {
   margin-top: 24px;
 }
-.mt-0 {
-  margin-top: 0px;
+.ml-\[\] {
+  margin-left: ;
+}
+.ml-\[60px\] {
+  margin-left: 60px;
+}
+.ml-\[40px\] {
+  margin-left: 40px;
+}
+.ml-\[44px\] {
+  margin-left: 44px;
+}
+.mt-\[\] {
+  margin-top: ;
+}
+.mt-\[12px\] {
+  margin-top: 12px;
+}
+.mt-\[22px\] {
+  margin-top: 22px;
 }
 .line-clamp-1 {
   overflow: hidden;
@@ -784,11 +805,20 @@ video {
 .max-w-\[504px\] {
   max-width: 504px;
 }
+.max-w-\[532px\] {
+  max-width: 532px;
+}
 .max-w-\[552px\] {
   max-width: 552px;
 }
 .max-w-\[604px\] {
   max-width: 604px;
+}
+.max-w-\[620px\] {
+  max-width: 620px;
+}
+.max-w-\[640px\] {
+  max-width: 640px;
 }
 .max-w-\[742px\] {
   max-width: 742px;
@@ -798,6 +828,15 @@ video {
 }
 .max-w-\[851px\] {
   max-width: 851px;
+}
+.max-w-\[690px\] {
+  max-width: 690px;
+}
+.max-w-\[650px\] {
+  max-width: 650px;
+}
+.max-w-\[700px\] {
+  max-width: 700px;
 }
 .list-disc {
   list-style-type: disc;
@@ -865,6 +904,9 @@ video {
 .gap-\[32px\] {
   gap: 32px;
 }
+.gap-\[40px\] {
+  gap: 40px;
+}
 .gap-\[4px\] {
   gap: 4px;
 }
@@ -876,9 +918,6 @@ video {
 }
 .gap-\[8px\] {
   gap: 8px;
-}
-.gap-\[40px\] {
-  gap: 40px;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -909,9 +948,6 @@ video {
 }
 .rounded-none {
   border-radius: 0px;
-}
-.rounded-\[\] {
-  border-radius: ;
 }
 .border-2 {
   border-width: 2px;
@@ -1207,12 +1243,6 @@ video {
 .pt-\[80px\] {
   padding-top: 80px;
 }
-.pt-0 {
-  padding-top: 0px;
-}
-.pt-\[-100px\] {
-  padding-top: -100px;
-}
 .text-left {
   text-align: left;
 }
@@ -1248,12 +1278,6 @@ video {
 }
 .text-\[50px\] {
   font-size: 50px;
-}
-.text-\[20\.21px\] {
-  font-size: 20.21px;
-}
-.text-\[16pc\] {
-  font-size: 16pc;
 }
 .font-bold {
   font-weight: 700;
@@ -1321,9 +1345,6 @@ video {
 .leading-\[63\.15px\] {
   line-height: 63.15px;
 }
-.leading-\[\$265\] {
-  line-height: $265;
-}
 .text-\[\#000000\] {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1355,6 +1376,9 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
 }
 .opacity-\[1\] {
   opacity: 1;
