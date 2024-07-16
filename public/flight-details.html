@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Header start -->
+    <header style="box-shadow: 0px 4px 16px 0px #1122110D;" class="md:pt-0 pt-[20px] md:pb-0 pb-[20px]">
+        <div class="max-w-[1256px] mx-auto px-5">
+            <div class="flex justify-between items-center">
+                <ul class="hidden md:flex gap-[32px] items-center pt-[30px]">
+                    <li>
+                        <a class="hover:border-b-[4px] pb-[22px]  border-b-[4px] border-white hover:border-[#8DD3BB]  flex items-center text-black font-semibold text-[14px] gap-[4px]"
+                            href="#">
+                            <img src="./img/flight-search/header/airplane.svg" alt="">
+                            Find Flight
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" hover:border-b-[4px] pb-[22px] border-b-[4px] border-white hover:border-[#8DD3BB]  flex items-center text-black font-semibold text-[14px] gap-[4px]"
+                            href="#">
+                            <img src="./img/flight-search/header/bed.svg" alt="">
+                            Find Stays
+                        </a>
+                    </li>
+                </ul>
+                <a href="#">
+                    <img src="./img/flight-search/header/logo.svg" alt="">
+                </a>
+                <button class="block md:hidden" id="hamburger-menu">
+                    <i class="fa-solid fa-xl fa-bars" style="color: #000000;"></i>
+                </button>
+                <div style="transition: all .5s; background-image: url(./img/plan/flights.png);" id="responsive-menu"
+                    class="z-50 bg-center bg-no-repeat px-[24px] pt-[24px] pb-[290px] w-full mx-auto fixed top-0 -left-full">
+                    <div class="flex items-center justify-between mb-[40px]">
+                        <a href="">
+                            <img class="" src="./img/header/Logo.svg" alt="">
+                        </a>
+                        <button id="close-menu">
+                            <i class=" fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+                        </button>
+
+                    </div>
+                    <div class="justify-center flex">
+                        <ul class="w-[100px] flex flex-col gap-[20px] justify-center">
+                            <li class="w-[100px]">
+                                <a class="mb-[20px] w-[100px] flex items-center text-white font-semibold text-[14px] gap-[4px]"
+                                    href="#">
+                                    <img src="./img/header/airplane.svg" alt="">
+                                    Find Flight
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mb-[20px] flex items-center text-white font-semibold text-[14px] gap-[4px]"
+                                    href="#">
+                                    <img src="./img/header/bed.svg" alt="">
+                                    Find Stays
+                                </a>
+                            </li>
+                            <li>
+                                <a class=" pr-[16px] border-black flex items-center gap-[4px] text-white font-semibold"
+                                    href="#"> <img class="text-white" src="./img/flight-plans/header/heart.svg"
+                                        alt="">Favourites</a>
+                            </li>
+                            <li>
+                                <a class="flex items-center text-white  font-semibold text-[16px]" href="#"><img
+                                        class="w-[45px]" src="./img/flight-plans/header/profile-avatar.png" alt=""> John
+                                    D.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="hidden md:flex gap-[32px] items-center">
+                    <li>
+                        <a class="md:border-r-[3px] pr-[16px] border-black flex items-center gap-[4px] text-black font-semibold text-[14px]"
+                            href="#"><svg class="text-white md:text-black" width="24" height="25" viewBox="0 0 24 25"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9995 21.5C11.6985 21.4996 11.4045 21.4086 11.1558 21.2389C7.47189 18.7381 5.87673 17.0234 4.99689 15.9514C3.12189 13.6663 2.22423 11.3202 2.24954 8.77953C2.27908 5.86813 4.61486 3.5 7.45642 3.5C9.52267 3.5 10.9538 4.66391 11.7872 5.63328C11.8136 5.66368 11.8462 5.68805 11.8829 5.70476C11.9195 5.72146 11.9593 5.73011 11.9995 5.73011C12.0398 5.73011 12.0796 5.72146 12.1162 5.70476C12.1529 5.68805 12.1855 5.66368 12.2119 5.63328C13.0453 4.66297 14.4764 3.5 16.5427 3.5C19.3842 3.5 21.72 5.86812 21.7495 8.78C21.7749 11.3211 20.8763 13.6672 19.0022 15.9519C18.1224 17.0239 16.5272 18.7386 12.8433 21.2394C12.5946 21.4089 12.3006 21.4998 11.9995 21.5Z"
+                                    fill="currentColor" />
+                            </svg>
+                            Favourites</a>
+                    </li>
+                    <li>
+                        <a class="flex gap-[4px] leading-[#112211] items-center text-black rounded-[10px] font-semibold text-[14px]"
+                            href="#"><img class="w-[45px]" src="./img/flight-plans/header/profile-avatar.png" alt="">
+                            John D.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    <!-- Hero start -->
+    <section class="pt-[48px]">
+        <div class="max-w-[1256px] mx-auto px-5">
+            <div class="mb-[29px]">
+                <a class="text-[#FF8682]" href="">Turkey <span class="text-[#4C584C]">></span> instanbul <span
+                        class="text-[#4C584C]">></span> <span class="text-[#4C584C]">CVK Park Bosphorus Hotel
+                        Istanbul</span></a>
+            </div>
+            <div class="">
+                <div class="md:flex items-start gap-[40px]">
+                    <!-- rooms start -->
+                    <div style="box-shadow: 0px 4px 16px 0px #1122110D;"
+                        class="max-w-[790px] py-[32px] px-[24px] rounded-[12px]">
+                        <div class="mb-[24px] md:flex items-center justify-between">
+                            <h4 class="mb-[8px] md:mb-0 md:max-w-[431px] font-bold text-[14px] md:text-[24px] md:leading-[30.31px] text-[#112211]">
+                                Superior room - 1 double bed or 2 twin beds
+                            </h4>
+                            <p class="font-bold text-[16px] md:text-[32px] md:leading-[17.07px] text-[#FF8682]">$240<span
+                                    class="text-[10px] md:text-[14px]">/night</span></p>
+                        </div>
+                        <div
+                            class="mb-[40px] gap-[24px] flex items-center max-w-[742px] border-[1px] border-[#8DD3BB] rounded-[8px] ">
+                            <div class="pl-[32px]">
+                                <img src="./img/booking-details/hero/cvk-img.png" alt="">
+                            </div>
+                            <div class="">
+                                <h4 class="mb-[8px] font-semibold text-[12px] md:text-[24px] md:leading-[29.26px] text-[#112211]">CVK Park
+                                    Bosphorus Hotel Istanbul</h4>
+                                <a class="font-medium text-[8px] md:text-[14px] md:leading-[17.07px] text-[#112211] opacity-[75%] flex items-center gap-[2px]"
+                                    href="">
+                                    <img src="./img/booking-details/hero/location.svg" alt="">
+                                    Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437
+                                </a>
+                            </div>
+                        </div>
+                        <div class="md:flex items-center justify-between">
+                            <div>
+                                <h3 class="font-semibold text-[12px] md:text-[20px] leading-[24.38px] text-[#112211]">
+                                    Thursday, Dec 8
+                                </h3>
+                                <span
+                                    class="font-medium text-[12px] md:text-[14px] md:leading-[17.07px] text-[#112211] opacity-[60%]">Check-In</span>
+                            </div>
+                            <img class="w-[80px] md:w-[130px]" src="./img/booking-details/hero/buildings.svg" alt="">
+                            <div>
+                                <h3 class="font-semibold text-[12px] md:text-[20px] leading-[24.38px] text-[#112211]">
+                                    Friday, Dec 9
+                                </h3>
+                                <span
+                                    class="font-medium text-[12px] md:text-[14px] md:leading-[17.07px] text-[#112211] opacity-[60%]">Check-Out</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- rooms end -->
+                    <!-- sidebar start -->
+                    <div class="mb-[130px] md:mb-0 pt-[24px] pl-[24px] max-w-[450px] rounded-[12px]"
+                        style="box-shadow: 0px 4px 16px 0px #1122110D;">
+                        <div class="flex gap-[24px] mb-[16px]">
+                            <div>
+                                <img src="./img/booking-details/hero/sidebar-img.png" alt="">
+                            </div>
+                            <div>
+                                <span
+                                    class="mb-[4px] font-medium text-[12px] md:text-[16px] leading-[19.5px] text-[#112211] opacity-[75%]">CVK
+                                    Park Bosphorus...</span>
+                                <h4 class="mb-[16px] font-semibold text-[12px] md:text-[20px] md:leading-[24.38px] text-[#112211]">
+                                    Superior room - 1 double bed or 2 twin beds</h4>
+                                <div class="flex items-center gap-[8px]">
+                                    <span class="py-[8.5px] px-[11px] border-[1px] border-[#8DD3BB] rounded-[4px]">
+                                        4.2
+                                    </span>
+                                    <p class="font-bold text-[8px] md:text-[12px] leading-[14.63px] text-[#112211]">Very Good <span
+                                            class="font-medium">54 reviews</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-[16px] max-w-[402px] border-[#112211] opacity-[25%]">
+                        <div>
+                            <p>Your booking is protected by <b>golobe</b></p>
+                        </div>
+                        <hr class="mb-[16px] mt-[16px] max-w-[402px] border-[#112211] opacity-[25%]">
+                        <div>
+                            <h5 class="font-bold text-[16px] leading-[20.21px] text-[#112211] mb-[16px]">Price Details
+                            </h5>
+                            <div class="flex justify-between pr-[24px]">
+                                <ul class="flex flex-col gap-[16px]">
+                                    <li>Base Fare</li>
+                                    <li>Discount</li>
+                                    <li>Taxes</li>
+                                    <li>Service Fee</li>
+                                </ul>
+                                <ul class="flex flex-col items-end gap-[16px]">
+                                    <li class="font-semibold text-[16px] leading-[19.5px] text-[#112211]  ">$240</li>
+                                    <li class="font-semibold text-[16px] leading-[19.5px] text-[#112211]  ">$0</li>
+                                    <li class="font-semibold text-[16px] leading-[19.5px] text-[#112211]  ">$20</li>
+                                    <li class="font-semibold text-[16px] leading-[19.5px] text-[#112211]  ">$5</li>
+                                </ul>
+                            </div>
+                            <hr class="mb-[16px] mt-[16px] max-w-[402px] border-[#112211] opacity-[25%]">
+                            <div class="flex items-center justify-between pr-[24px] pb-[24px]">
+                                <ul>
+                                    <li>Total </li>
+                                </ul>
+                                <ul>
+                                    <li class="font-semibold text-[16px] leading-[19.5px] text-[#112211]  ">$265</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sidebar end -->
+                </div>
+                <div class="mt-[-90px] md:mt-[-110px]">
+                    <div class="mb-[40px] max-w-[620px] py-[16px] px-[16px] rounded-[12px]"
+                        style="box-shadow: 0px 4px 16px 0px #1122110D;">
+                        <div>
+                            <div
+                                class=" max-w-[620px] w-full rounded-[12px] px-[16px] py-[16px] flex items-center justify-between bg-[#8DD3BB]">
+                                <div class="">
+                                    <h5 class="font-bold text-[16px] leading-[20.21px] text-[#112211] mb-[8px]">Pay in
+                                        full</h5>
+                                    <p class="font-normal text-[14px] leading-[17.07px] text-[#112211]">Pay the total
+                                        and you are all set</p>
+                                </div>
+                                <div>
+                                    <form action="">
+                                        <label for="radio">
+                                            <input id="radio" name="radio1" type="radio">
+                                        </label>
+                                </div>
+                            </div>
+                            <div class="flex items-center max-w-[620px]">
+                                <div class="pt-[16px] pl-[16px]">
+                                    <h5 class="mb-[12px] font-bold text-[16px] leading-[20.21px] text-[#112211]">Pay
+                                        part now, part later</h5>
+                                    <p class="max-w-[250px] md:max-w-[532px] text-[10px] md:text-[14px]">Pay $207.43 now, and the rest ($207.43) will be
+                                        automatically charged to the same payment method on Nov 14, 2022. No extra fees.
+                                    </p>
+                                    <div class="mt-[22px]">
+                                        <a class="mt-[22px] underline text-[12px]" href="">
+                                            More info
+                                        </a>
+                                    </div>
+                                </div>
+                                <label class="ml-[10px] md:mb-[22px]" for="">
+                                    <input name="radio1" type="radio">
+                                </label>
+                                </form>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-[120px] rounded-[12px] max-w-[620px] py-[24px] px-[24px]"
+                        style="box-shadow: 0px 4px 16px 0px #1122110D;">
+                        <div>
+                            <h4 class="mb-[16px] font-bold text-[20px]">Login or Sign up to book</h4>
+                            <form action="">
+                                <input
+                                    class="mb-[16px] rounded-[4px] pl-[16px] border-[#79747E] border-2 py-[14px] w-[300px] md:w-[580px] placeholder:text-black"
+                                    placeholder="Phone Number" type="text">
+                            </form>
+                            <p class="mb-[16px] font-normal text-[12px] md:text-[14px] md:leading-[17.07px] text-[#112211]">We’ll call or
+                                text you to confirm your number. Standard message and data rates apply. Privacy Policy
+                            </p>
+                            <button
+                                class="mb-[24px] font-medium text-[16px] leading-[19.5px] rounded-[4px] py-[14px] bg-[#8DD3BB] w-[300px] md:w-[580px]">Continue</button>
+                            <div class="mb-[24px] flex items-center gap-[20px]">
+                                <hr class="w-[261px]"><span>or</span>
+                                <hr class="w-[261px]">
+                            </div>
+                            <div class="mb-[16px] md:flex flex-col  md:flex-row flex gap-[10px] items-center justify-between">
+                                <div class="border-[1px] rounded-[4px] border-[#8DD3BB] py-[16px] px-[130px] md:px-[76px]">
+                                    <img src="./img/booking-details/hero/facebook-ico.svg" alt="">
+                                </div>
+
+                                <div class="border-[1px] rounded-[4px] border-[#8DD3BB] py-[16px] px-[130px] md:px-[76px]">
+                                    <img class="" src="./img/booking-details/hero/google-ico.svg" alt="">
+                                </div>
+                                <div class="border-[1px] rounded-[4px] border-[#8DD3BB] py-[16px] px-[130px] md:px-[76px]">
+                                    <img class="" src="./img/booking-details/hero/apple-ico.svg" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <a class="text-[10px] md:text-[16px] border-[1px] rounded-[4px] border-[#8DD3BB] px-[80px] md:px-[180px] py-[18px] flex items-center md:gap-[16px]"
+                                    href="">
+                                    <img src="./img/booking-details/hero/mailbox-ico.svg" alt="">
+                                    Continue with email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mb-- start -->
+            <div class=" mb-[-180px] relative z-50 max-w-[1232px] hidden md:flex justify-between rounded-[20px] pt-[24px] px-[24px] bg-[#CDEAE1]"
+                style="box-shadow: 0px 4px 16px 0px #1122110D;">
+                <div>
+                    <h4 class="mb-[24px] font-bold text-[44px] leading-[54px] text-[#112211] max-w-[364px]">Subscribe
+                        Newsletter</h4>
+                    <span class="mb-[8px] font-bold text-[20px] leading-[25.26px] text-[#112211] opacity-[80%]">
+                        The Travel
+                    </span>
+                    <p class="mb-[16px] font-medium text-[16px] leading-[19.5px]  tetx-[#112211] opacity-[70%]">Get
+                        inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+                    <input class="w-[593px] py-[18px] pl-[16px] rounded-[4px] outline-none"
+                        placeholder="Your email address" type="text"> <button
+                        class="ml-[16px] py-[19px] px-[16px] bg-[#112211] text-white rounded-[4px]">Subscribe</button>
+                </div>
+                <div class="">
+                    <img src="./img/rewievs/mailbox.svg" alt="">
+                </div>
+            </div>
+            <!-- mb-- end -->
+        </div>
+    </section>
+    <!-- Hero end -->
+     
+    <!-- Footer start -->
+    <footer class="bg-[#8DD3BB] pt-[30px] md:pt-[218px] pb-[64px]">
+        <div class="max-w-[1256px] mx-auto px-5 flex">
+            <div class="md:mr-[140px]">
+                <a class="" href="#">
+                    <img class="mb-[24px]" src="./img/footer/footer-logo.svg" alt="">
+                </a>
+                <div class="md:flex grid grid-cols-2 md:gap-[12px]">
+                    <img src="./img/footer/facebook-icon.svg" alt="">
+                    <img src="./img/footer/twitter-icon.svg" alt="">
+                    <img src="./img/footer/youtube-icon.svg" alt="">
+                    <img src="./img/footer/instagram-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="md:flex grid grid-cols-2 gap-[32px] md:gap-[74px]">
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Our Destinations</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Canada</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Alaksa</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">France</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Iceland</a>
+                    </li>
+                </ul>
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Our Activities</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Northern Lights</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Cruising & sailing</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Multi-activities</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]"
+                            href="">Kayaing</a>
+                    </li>
+                </ul>
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Travel Blogs</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Bali
+                            Travel Guide</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Sri
+                            Lanks Travel Guide</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Peru
+                            Travel Guide</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Bali
+                            Travel Guide</a>
+                    </li>
+                </ul>
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">About Us</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Our
+                            Story</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Work
+                            with us</a>
+                    </li>
+                </ul>
+                <ul class="gap-[12px] flex flex-col">
+                    <li class="mb-[16px] text-bold text-[#112211] text-[16px] leading-[20.21px]">Contact Us</li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Our
+                            Story</a>
+                    </li>
+                    <li>
+                        <a class="font-medium text-[14px] leading-[17.07px] text-[#112211] opacity-[70%]" href="">Work
+                            with us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+
+        <script src="./js/app.js"></script>
+
+
+
+</body>
+
+</html>
