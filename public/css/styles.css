@@ -673,6 +673,15 @@ video {
 .mb-\[\] {
   margin-bottom: ;
 }
+.mb-\[px\] {
+  margin-bottom: px;
+}
+.mb-\[28px\] {
+  margin-bottom: 28px;
+}
+.ml-\[120px\] {
+  margin-left: 120px;
+}
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -903,6 +912,12 @@ video {
 }
 .gap-\[8px\] {
   gap: 8px;
+}
+.gap-\[47px\] {
+  gap: 47px;
+}
+.gap-\[37px\] {
+  gap: 37px;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1282,6 +1297,9 @@ video {
 .text-\[8px\] {
   font-size: 8px;
 }
+.text-\[20\.21px\] {
+  font-size: 20.21px;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -1380,6 +1398,15 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-\[\#1122110\] {
+  color: #1122110;
+}
+.text-\[p20\.21px\] {
+  color: p20.21px;
+}
+.text-\[\] {
+  color: ;
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -1406,6 +1433,9 @@ video {
 }
 .opacity-\[80\%\] {
   opacity: 80%;
+}
+.opacity-\[\] {
+  opacity: ;
 }
 .outline-none {
   outline: 2px solid transparent;
@@ -1485,6 +1515,18 @@ video {
 
   .md\:mt-\[-110px\] {
     margin-top: -110px;
+  }
+
+  .md\:mb-\[\] {
+    margin-bottom: ;
+  }
+
+  .md\:mb-\[28\.5px\] {
+    margin-bottom: 28.5px;
+  }
+
+  .md\:ml-\[120px\] {
+    margin-left: 120px;
   }
 
   .md\:block {
