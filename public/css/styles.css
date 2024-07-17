@@ -685,6 +685,12 @@ video {
 .mt-\[24px\] {
   margin-top: 24px;
 }
+.mt-\[32px\] {
+  margin-top: 32px;
+}
+.mt-\[\=\] {
+  margin-top: =;
+}
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -840,6 +846,13 @@ video {
 }
 .max-w-\[851px\] {
   max-width: 851px;
+}
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .list-disc {
   list-style-type: disc;
@@ -1246,6 +1259,9 @@ video {
 .pt-\[30px\] {
   padding-top: 30px;
 }
+.pt-\[32px\] {
+  padding-top: 32px;
+}
 .pt-\[372px\] {
   padding-top: 372px;
 }
@@ -1474,7 +1490,7 @@ video {
     display: flex;
   }
   .field input{
-   margin-left: -100px;
+   margin-left: -90px;
    margin-right: -100px;
     outline: none;
     font-size: 19px;
@@ -1546,7 +1562,93 @@ video {
   }
 
   .field1{
-    margin-left: -80px;
+    margin-left: -120px;
+  }
+
+
+
+
+  .price-input1{
+    display: flex;
+    justify-content: space-between ;
+  }
+  .price-input1 .field{
+    display: flex;
+  }
+  .field input{
+   margin-left: -90px;
+   margin-right: -100px;
+    outline: none;
+    font-size: 19px;
+    text-align: center;
+    -moz-appearance: textfield;
+  }
+  .field1 input{
+    margin-left: 270px;
+     outline: none;
+     font-size: 19px;
+     text-align: center;
+     -moz-appearance: textfield;
+   }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .price-input1 .separator1{
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+  }
+  .slider1{
+    height: 1px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  .slider1 .progress1{
+    height: 2px;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    border-radius: 5px;
+    background: #112211;
+    width: 300px;
+  }
+  .range-input1{
+    position: relative;
+  }
+  .range-input1 input{
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #8DD3BB;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+  input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #8DD3BB;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+
+  .field1{
+    margin-left: -120px;
   }
 
   .placeholder\:text-\[\#1C1B1F\]::-moz-placeholder {

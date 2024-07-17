@@ -144,27 +144,141 @@
                     <div>
                         <h2 class="mb-[32px] font-semibold text-[20px] leading-[24.38px] text-[#112211]">Filters</h2>
                         <div>
+                            <!-- input range start -->
                             <div class="wrapper">
-                                <div>
-                                    <h2 class="mb-[16px]">Price</h2>
+                                <div class="mb-[20px] flex items-center justify-between">
+                                    <h2 class="mb-[16px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">
+                                        Price</h2>
+                                    <button id="close-nav-btn">
+                                        <img src="./img/flight-listing/hero/chevron_down.svg" alt="">
+                                    </button>
 
                                 </div>
-                                <div class="slider">
-                                    <div class="progress"></div>
+                                <div id="filter-box" class="">
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="1200" value="0" step="10">
+                                        <input type="range" class="range-max" min="0" max="1200" value="1200" step="10">
+                                    </div>
+                                    <div class="price-input">
+                                        <div class="field">
+                                            <input type="number" class="input-min" value="0">
+                                        </div>
+                                        <div class="field1">
+                                            <input type="number" class="input-max" value="1200">
+                                        </div>
+                                    </div>
+                                    <hr class="pt-[32px] mt-[32px]">
                                 </div>
-                                <div class="range-input">
-                                    <input type="range" class="range-min" min="0" max="1200" value="0" step="10">
-                                    <input type="range" class="range-max" min="0" max="1200" value="1200" step="10">
+
+                            </div>
+                            <!-- input range end -->
+                            <!-- input range start -->
+                            <div class="wrapper">
+                                <div class="mb-[20px] flex items-center justify-between">
+                                    <h2 class="mb-[16px] font-semibold text-[16px] leading-[19.5px] text-[#112211]  ">
+                                        Departure Time</h2>
+                                    <button id="close-nav-btn">
+                                        <img src="./img/flight-listing/hero/chevron_down.svg" alt="">
+                                    </button>
+
                                 </div>
-                                <div class="price-input">
-                                  <div class="field">
-                                    <input type="number" class="input-min" value="0">
-                                  </div>
-                                  <div class="field1">
-                                    <input type="number" class="input-max" value="1200">
-                                  </div>
+                                <div id="filter-box" class="">
+                                    <div class="slider1">
+                                        <div class="progress1"></div>
+                                    </div>
+                                    <div class="range-input1">
+                                        <input type="range" class="range-min1" min="0" max="1200" value="0" step="10">
+                                        <input type="range" class="range-max" min="0" max="1200" value="1200" step="10">
+                                    </div>
+                                    <div class="price-input1">
+                                        <div class="field">
+                                            <input type="number" class="input-min1" value="0">
+                                        </div>
+                                        <div class="field1">
+                                            <input type="number" class="input-max" value="1200">
+                                        </div>
+                                    </div>
+                                    <hr class="pt-[32px] mt-[32px]">
                                 </div>
-                              </div>
+
+                            </div>
+                            <!-- input range end -->
+                            <div class="">
+                                <div class="flex items-center justify-between wrapper">
+                                    <h3 class="font-semibold text-[16px] leading-[19.5px] text-[#112211]">Rating</h3>
+                                    <button id="close-nav-btn">
+                                        <img src="./img/flight-listing/hero/chevron_down.svg" alt=" ">
+                                    </button>
+                                </div>
+                                <div id="filter-box">
+                                    <div class="pt-[24px] flex items-center gap-[16px]">
+                                        <div id="rating_boxes"
+                                            class="cursor-pointer py-[8.5px] px-[12px] border-[1px] border-[#8DD3BB] rounded-[4px]">
+                                            0+
+                                        </div>
+                                        <div id="rating_boxes"
+                                            class="cursor-pointer py-[8.5px] px-[12px] border-[1px] border-[#8DD3BB] rounded-[4px]">
+                                            1+
+                                        </div>
+                                        <div id="rating_boxes"
+                                            class="cursor-pointer py-[8.5px] px-[12px] border-[1px] border-[#8DD3BB] rounded-[4px]">
+                                            2+
+                                        </div>
+                                        <div id="rating_boxes"
+                                            class="cursor-pointer py-[8.5px] px-[12px] border-[1px] border-[#8DD3BB] rounded-[4px]">
+                                            3+
+                                        </div>
+                                        <div id="rating_boxes"
+                                            class="cursor-pointer py-[8.5px] px-[12px] border-[1px] border-[#8DD3BB] rounded-[4px]">
+                                            4+
+                                        </div>
+                                    </div>
+                                    <hr class="wrapper pt-[16px] mt-[32px]">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="pt-[32px] flex items-center justify-between wrapper">
+                                    <h3>Airlines</h3>
+                                    <button id="close-nav-btn">
+                                        <img src="./img/flight-listing/hero/chevron_down.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="pt-[16px]" id="filter-box">
+                                    <div>
+                                        <form class="flex items-center" action="">
+                                            <div class="flex flex-col gap-[8px]">
+                                                <div>
+                                                    <label for="emirated">
+                                                        <input id="emirated" type="checkbox">
+                                                        Emirated
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label for="dubai">
+                                                        <input id="dubai" type="checkbox">
+                                                        Fly Dubai
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label for="qatar">
+                                                        <input id="qatar" type="checkbox">
+                                                        Qatar
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label for="etihad">
+                                                        <input id="etihad" type="checkbox">
+                                                        Etihad
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- sidebar end-->
