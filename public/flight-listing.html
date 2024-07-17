@@ -139,7 +139,7 @@
                         </div>
                     </form>
                 </div>
-                <div>
+                <div class="flex">
                     <!-- sidebar start-->
                     <div>
                         <h2 class="mb-[32px] font-semibold text-[20px] leading-[24.38px] text-[#112211]">Filters</h2>
@@ -240,95 +240,164 @@
                                 </div>
                             </div>
                             <div>
-                                
-                                </div>
-                                <div class="mb-[32px]">
-
-                                    <div class=" pt-[32px] flex items-center justify-between wrapper">
-                                        <h3 class="font-semibold text-[16px]">Airlines</h3>
-                                        <button id="close-nav-btn">
-                                            <img src="./img/flight-listing/hero/chevron_down.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <div class="pt-[16px]" id="filter-box">
-                                        <div>
-                                            <form class="flex items-center" action="">
-                                                <div class="flex flex-col gap-[8px]">
-                                                    <div>
-                                                        <label for="emirated">
-                                                            <input id="emirated" type="checkbox">
-                                                            Emirated
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="dubai">
-                                                            <input id="dubai" type="checkbox">
-                                                            Fly Dubai
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="qatar">
-                                                            <input id="qatar" type="checkbox">
-                                                            Qatar
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="etihad">
-                                                            <input id="etihad" type="checkbox">
-                                                            Etihad
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <hr class="my-[32px] wrapper">
-                                        </div>
-                                        </div>
-                                </div>
-                                    <div class="flex items-center justify-between wrapper">
-                                        <h3 class="font-semibold text-[16px]">Trips</h3>
-                                        <button id="close-nav-btn">
-                                            <img src="./img/flight-listing/hero/chevron_down.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <div class="pt-[16px]" id="filter-box">
-                                        <div>
-                                            <form class="flex items-center" action="">
-                                                <div class="flex flex-col gap-[8px]">
-                                                    <div>
-                                                        <label for="Round">
-                                                            <input id="Round" type="checkbox">
-                                                           Round trip
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="Way">
-                                                            <input id="Way" type="checkbox">
-                                                            On Way
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="Multi">
-                                                            <input id="Multi" type="checkbox">
-                                                        Multi-City
-                                                        </label>
-                                                    </div>
-                                                    <div>
-                                                        <label for="Dates">
-                                                            <input id="Dates" type="checkbox">
-                                                         My Dates Are Flexible
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                            <!-- sidebar end-->
-                            <div>
 
                             </div>
+                            <div class="mb-[32px]">
 
+                                <div class=" pt-[32px] flex items-center justify-between wrapper">
+                                    <h3 class="font-semibold text-[16px]">Airlines</h3>
+                                    <button id="close-nav-btn">
+                                        <img src="./img/flight-listing/hero/chevron_down.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="pt-[16px]" id="filter-box">
+                                    <div>
+                                        <form class="flex items-center" action="">
+                                            <div class="flex flex-col gap-[8px]">
+                                                <div>
+                                                    <label for="emirated">
+                                                        <input id="emirated" type="checkbox">
+                                                        Emirated
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label for="dubai">
+                                                        <input id="dubai" type="checkbox">
+                                                        Fly Dubai
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label for="qatar">
+                                                        <input id="qatar" type="checkbox">
+                                                        Qatar
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label for="etihad">
+                                                        <input id="etihad" type="checkbox">
+                                                        Etihad
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <hr class="my-[32px] wrapper">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between wrapper">
+                                <h3 class="font-semibold text-[16px]">Trips</h3>
+                                <button id="close-nav-btn">
+                                    <img src="./img/flight-listing/hero/chevron_down.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="pt-[16px]" id="filter-box">
+                                <div>
+                                    <form class="flex items-center" action="">
+                                        <div class="flex flex-col gap-[8px]">
+                                            <div>
+                                                <label for="Round">
+                                                    <input id="Round" type="checkbox">
+                                                    Round trip
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label for="Way">
+                                                    <input id="Way" type="checkbox">
+                                                    On Way
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label for="Multi">
+                                                    <input id="Multi" type="checkbox">
+                                                    Multi-City
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label for="Dates">
+                                                    <input id="Dates" type="checkbox">
+                                                    My Dates Are Flexible
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
                         </div>
                     </div>
+                    <!-- sidebar end-->
+                    <div>
+                        <div class="mb-[24px] rounded-[12px] ml-[40px] w-[875px] py-[17.5px] pl-[24px] pr-[24px]"
+                            style="box-shadow: 0px 4px 16px 0px #1122110D;">
+                            <div class="flex">
+                                <div class="max-w-[160px] border-r-[1px] border-[#D7E2EE] pr-[85px]">
+                                    <h4 class="mb-[8px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">
+                                        Cheapest</h4>
+                                    <span
+                                        class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[40%]">$99.
+                                        <time> 2h18m</time> </span>
+                                </div>
+                                <div class="ml-[24px] max-w-[160px] border-r-[1px] border-[#D7E2EE] pr-[85px]">
+                                    <h4 class="mb-[8px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">Best
+                                    </h4>
+                                    <span
+                                        class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[40%]">$99.
+                                        <time> 2h18m</time> </span>
+                                </div>
+                                <div class="ml-[24px] max-w-[160px] border-r-[1px] border-[#D7E2EE] pr-[85px]">
+                                    <h4 class="mb-[8px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">
+                                        Quickest</h4>
+                                    <span
+                                        class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[40%]">$99.
+                                        <time> 2h18m</time> </span>
+                                </div>
+                                <div class="flex items-center ml-[24px] max-w-[160px] gap-[8px] pr-[50px]">
+                                    <img class="w-[24px]" src="./img/flight-listing/hero/menu.svg" alt="">
+                                    <h4 class="mb-[8px] font-semibold text-[16px] leading-[19.5px] text-[#112211]">Other
+                                        sort</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-[16px] ml-[40px] max-w-[875px] pt-[24px] px-[16px]">
+                            <div>
+                                <p>Showing 4 of <span>257 places</span></p>
+                            </div>
+                            <div class="flex">
+                                <div>
+                                    <img class="w-[160px]" src="./img/flight-listing/hero/card-img-1.png" alt="">
+                                </div>
+                                <div class="">
+                                    <div class="flex gap-[370px]">
+                                        <div class="flex items-center gap-[8px]">
+                                            <span
+                                                class="py-[8.5px] px-[11px] border-[1px] border-[#8DD3BB] rounded-[4px]">4.2</span>
+                                            <p><b>Very Good</b> 54 reviews</p>
+                                        </div>
+                                        <div class="flex flex-col text-end">
+                                            <p
+                                                class="font-medium text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">
+                                                starting from</p>
+                                            <span
+                                                class="font-bold text-[24px] leading-[29.26px] text-[#FF8682]">$104</span>
+                                            </div>
+                                        </div>
+                                    <div>
+                                        <form action="">
+                                            <label class="container">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+
                 </div>
     </section>
     <!-- Hero end -->

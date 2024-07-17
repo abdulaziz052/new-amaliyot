@@ -501,6 +501,39 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .fixed {
   position: fixed;
 }
@@ -659,6 +692,9 @@ video {
 .ml-\[24px\] {
   margin-left: 24px;
 }
+.ml-\[40px\] {
+  margin-left: 40px;
+}
 .ml-auto {
   margin-left: auto;
 }
@@ -691,9 +727,6 @@ video {
 }
 .mt-\[32px\] {
   margin-top: 32px;
-}
-.mt-\[\=\] {
-  margin-top: =;
 }
 .line-clamp-1 {
   overflow: hidden;
@@ -728,6 +761,12 @@ video {
 .w-\[144px\] {
   width: 144px;
 }
+.w-\[160px\] {
+  width: 160px;
+}
+.w-\[24px\] {
+  width: 24px;
+}
 .w-\[261px\] {
   width: 261px;
 }
@@ -758,6 +797,9 @@ video {
 .w-\[80px\] {
   width: 80px;
 }
+.w-\[875px\] {
+  width: 875px;
+}
 .w-\[90px\] {
   width: 90px;
 }
@@ -781,6 +823,9 @@ video {
 }
 .max-w-\[140px\] {
   max-width: 140px;
+}
+.max-w-\[160px\] {
+  max-width: 160px;
 }
 .max-w-\[166px\] {
   max-width: 166px;
@@ -850,6 +895,9 @@ video {
 }
 .max-w-\[851px\] {
   max-width: 851px;
+}
+.max-w-\[875px\] {
+  max-width: 875px;
 }
 .rotate-180 {
   --tw-rotate: 180deg;
@@ -924,6 +972,9 @@ video {
 .gap-\[32px\] {
   gap: 32px;
 }
+.gap-\[370px\] {
+  gap: 370px;
+}
 .gap-\[37px\] {
   gap: 37px;
 }
@@ -989,6 +1040,9 @@ video {
 }
 .border-r-2 {
   border-right-width: 2px;
+}
+.border-r-\[1px\] {
+  border-right-width: 1px;
 }
 .border-r-\[2px\] {
   border-right-width: 2px;
@@ -1131,6 +1185,10 @@ video {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.py-\[17\.5px\] {
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+}
 .py-\[18px\] {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -1239,8 +1297,14 @@ video {
 .pr-\[32px\] {
   padding-right: 32px;
 }
+.pr-\[50px\] {
+  padding-right: 50px;
+}
 .pr-\[64px\] {
   padding-right: 64px;
+}
+.pr-\[85px\] {
+  padding-right: 85px;
 }
 .pt-\[14px\] {
   padding-top: 14px;
@@ -1289,6 +1353,9 @@ video {
 }
 .text-right {
   text-align: right;
+}
+.text-end {
+  text-align: end;
 }
 .text-\[10px\] {
   font-size: 10px;
@@ -1654,36 +1721,95 @@ video {
   .field1{
     margin-left: -120px;
   }
-
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 2px solid #B8BDB8;
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: white;
+    border: 2px solid #B8BDB8;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #8DD3BB;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
   .placeholder\:text-\[\#1C1B1F\]::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(28 27 31 / var(--tw-text-opacity));
 }
-
   .placeholder\:text-\[\#1C1B1F\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(28 27 31 / var(--tw-text-opacity));
 }
-
   .placeholder\:text-black::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-
   .placeholder\:text-black::placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-
   .hover\:border-b-\[4px\]:hover {
   border-bottom-width: 4px;
 }
-
   .hover\:border-\[\#8DD3BB\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(141 211 187 / var(--tw-border-opacity));
 }
-
   @media (min-width: 768px) {
 
   .md\:left-\[46\%\] {
