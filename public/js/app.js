@@ -7,6 +7,8 @@ let box = document.querySelectorAll('#box')
 let close_nav_btn = document.querySelectorAll('#close-nav-btn')
 let filter_box = document.querySelectorAll('#filter-box')
 let rating_boxes = document.querySelectorAll('#rating_boxes')
+let header_btn = document.querySelector('#header-menus-btn')
+let header_menu = document.querySelector('#header-menus')
 
 
 if (document.querySelector('#responsive-menu')) {
@@ -31,7 +33,9 @@ close_nav_btn.forEach(function (item, index) {
 })
 
 
-
+header_btn.addEventListener('click' , function(){
+    header_menu.classList.toggle('hidden')
+})
 
 
 

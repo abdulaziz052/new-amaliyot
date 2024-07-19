@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <!-- Header start -->
-    <header style="box-shadow: 0px 4px 16px 0px #1122110D;" class="md:pt-0 pt-[20px] md:pb-0 pb-[20px]">
+      <!-- Header start -->
+      <header style="box-shadow: 0px 4px 16px 0px #1122110D;" class="md:pt-0 pt-[20px] md:pb-0 pb-[20px]">
         <div class="max-w-[1256px] mx-auto px-5">
             <div class="flex justify-between items-center">
                 <ul class="hidden md:flex gap-[32px] items-center pt-[30px]">
@@ -91,11 +91,65 @@
                             </svg>
                             Favourites</a>
                     </li>
-                    <li>
+                    <li class="relative">
                         <a class="flex gap-[4px] leading-[#112211] items-center text-black rounded-[10px] font-semibold text-[14px]"
                             href="#"><img class="w-[45px]" src="./img/flight-plans/header/profile-avatar.png" alt="">
                             John D.</a>
+                        <button id="header-menus-btn" class="bg-black rounded-full absolute bottom-0 right-[50px]">
+                            <img class="w-[16px]" src="./img/flight-listing/hero/header-menus.svg" alt="">
+                        </button>
                     </li>
+                    <div id="header-menus" class="hidden rounded-[12px] bg-white w-full absolute top-[70px] right-[200px] max-w-[329px] z-50 py-[32px] px-[32px]" style="box-shadow: 0px 2px 10px 0px #0000000D;">
+                        <div class="flex  items-center gap-[16px]">
+                            <div>
+                                <img class="w-[64px]" src="./img/flight-plans/header/profile-avatar.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[16px] leading-[19.5px] text-[#112211]">John Doe.</h4>
+                                <span
+                                    class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[75%]">Online</span>
+                            </div>
+                        </div>
+                        <hr class="mt-[24px] border-[#112211] opacity-[25%]">
+                        <div>
+                            <ul class="pt-[24px] flex flex-col gap-[16px]">
+                                <li>
+                                    <a class="flex items-center" href="">
+                                        <img class="mr-[8px]" src="./img/flight-plans/header/User.svg" alt="">My account
+                                        <img class="ml-auto" src="./img/flight-plans/header/chevron.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center" href="">
+                                        <img class="mr-[8px]" src="./img/flight-plans/header/card.svg" alt="">Payments
+                                        <img class="ml-auto" src="./img/flight-plans/header/chevron.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center" href="">
+                                        <img class="mr-[8px]" src="./img/flight-plans/header/settings.svg" alt="">Settings
+                                        <img class="ml-auto" src="./img/flight-plans/header/chevron.svg" alt="">
+                                    </a>
+                                </li>
+                                <hr class="mt-[24px]">
+                            </ul>
+                            <ul class="pt-[24px] flex flex-col gap-[16px]">
+                                <li>
+                                    <a class="flex items-center" href="">
+                                        <img class="mr-[8px]" src="./img/flight-plans/header/Support.svg" alt="">Support
+                                        <img class="ml-auto" src="./img/flight-plans/header/chevron.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center" href="">
+                                        <img class="mr-[8px]" src="./img/flight-plans/header/Logout.svg" alt="">Logout
+                                        <img class="ml-auto" src="./img/flight-plans/header/chevron.svg" alt="">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
