@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<!-- Demo styles -->
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+
+    <section class="pt-[104px]">
+        <div class="max-w-[1274px] mx-auto px-5">
+            <div class="flex h-[816px] gap-[104px]">
+                <!-- sweper start-->
+                <div class="swiper mySwiper w-full rounded-[30px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="" src="./img/login/swiper-img1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/login/swiper-img2.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/login/swiper-img1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/login/swiper-img2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- sweper end -->
+                <div class="">
+                    <a href="">
+                        <img class="mb-[64px]" src="./img/login/logo.svg" alt="">
+                    </a>
+                    <form action="">
+                        <div class="mb-[48px]">
+                            <h1 class="mb-[16px] font-bold text-[40px] leading-[50.52px] text-[#000000]">Sign up</h1>
+                            <p class="font-normal text-[16px] leading-[19.5px] text-[#112211] opacity-[75%]">Let’s get
+                                you all st up so you can access your personal account.</p>
+                        </div>
+                        <div class="mb-[24px] flex gap-[24px]">
+                            <label class="relative" for="">
+                                <input placeholder="john.doe@gmail.com"
+                                    class="w-[308px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
+                                    type="email">
+                            </label>
+                            <label class="relative" for="">
+                                <input placeholder="Password"
+                                    class=" w-[308px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
+                                    type="password">
+                            </label>
+                        </div>
+                        <div class="mb-[24px] flex gap-[24px]">
+                            <label class="relative" for="">
+                                <input placeholder="john.doe@gmail.com"
+                                    class="w-[308px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
+                                    type="email">
+                            </label>
+                            <label class="relative" for="">
+                                <input placeholder="Password"
+                                    class=" w-[308px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
+                                    type="password">
+                            </label>
+                        </div>
+                        <div class="mb-[24px]">
+                            <label class="relative" for="">
+                                <input placeholder="john.doe@gmail.com"
+                                    class="mb-[24px] w-[640px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
+                                    type="email">
+                            </label><br>
+                            <label class="relative" for="">
+                                <input placeholder="Password"
+                                    class=" w-[640px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
+                                    type="password">
+                            </label>
+                        </div>
+                        <div class="">
+                            <div>
+                                <button
+                                    class="mb-[16px] font-semibold text-[14px] leading-[17.07px] text-[#112211] rounded-[4px] py-3 w-[640px] bg-[#8DD3BB]">Create account</button>
+
+                            </div>
+                            <div class="mb-[40px] ml-[140px]">
+                                <span class="font-medium  text-[14px] leading-[17.07px] text-[#112211]">
+                                    Don’t have an account? <a
+                                        class="font-semibold text-[14px] text-[#FF8682] leading-[17.07px]" href="">Sign
+                                        up</a>
+                                </span>
+                            </div>
+                            <div class="mb-[40px] flex items-center gap-[16px]">
+                                <hr class="w-[194px]">
+                                <p class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[50%]">Or
+                                    login with</p>
+                                <hr class="w-[194px]">
+                            </div>
+                            <div class="flex gap-[16px]">
+                                <a class="border-[1px] border-[#8DD3BB] rounded-[4px] py-[16px] px-[68px]" href="">
+                                    <img src="./img/login/facebook-ico.svg" alt="">
+                                </a>
+                                <a class="border-[1px] border-[#8DD3BB] rounded-[4px] py-[16px] px-[68px]" href="">
+                                    <img src="./img/login/google-ico.svg" alt="">
+                                </a>
+                                <a class="border-[1px] border-[#8DD3BB] rounded-[4px] py-[16px] px-[68px]" href="">
+                                    <img src="./img/login/apple-ico.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
