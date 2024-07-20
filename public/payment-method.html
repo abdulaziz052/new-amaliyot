@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign-up</title>
+    <title>payment-method</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -77,89 +77,78 @@
                         <img class="mb-[64px]" src="./img/login/logo.svg" alt="">
                     </a>
                     <form action="">
+                        <a class="mb-[16px] flex items-center gap-[4px] font-medium text-[14px] leading-[17.07px] text-[#112211]"
+                            href="">
+                            <img src="./img/payment-method/chevron_back.svg" alt="">
+                            Back
+                        </a>
                         <div class="mb-[48px]">
-                            <h1 class="mb-[16px] font-bold text-[40px] leading-[50.52px] text-[#000000]">Sign up</h1>
+                            <h1 class="mb-[16px] font-bold text-[40px] leading-[50.52px] text-[#000000]">Add a payment
+                                method</h1>
                             <p class="font-normal text-[16px] leading-[19.5px] text-[#112211] opacity-[75%]">Let’s get
                                 you all st up so you can access your personal account.</p>
                         </div>
                         <div class="mb-[24px] flex gap-[24px]">
                             <label class="relative" for="">
-                                <span class="absolute bg-white top-[-10px] left-[10px]">First Name</span>
-                                <input placeholder="john.doe@gmail.com"
-                                    class="w-[308px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
+                                <span class="absolute bg-white top-[-10px] left-[10px]">Card Number</span>
+                                <input placeholder="4321 4321 4321 4321"
+                                    class="w-[640px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
                                     type="email">
+                                <a href="">
+                                    <img class="absolute top-[13px] right-[10px] " src="./img/payment-method/Visa.svg"
+                                        alt="">
+                                </a>
                             </label>
-                            <label class="relative" for="">
-                                <span class="absolute bg-white top-[-10px] left-[10px]">Last Name</span>
-                                <input placeholder="john.doe@gmail.com"
-                                    class=" w-[308px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
-                                    type="text">
-                            </label>
+
                         </div>
                         <div class="mb-[24px] flex gap-[24px]">
                             <label class="relative" for="">
-                                <span class="absolute bg-white top-[-10px] left-[10px]">Email</span>
-                                <input placeholder="john.doe@gmail.com"
+                                <span class="absolute bg-white top-[-10px] left-[10px]">Exp. Date</span>
+                                <input placeholder="02/27"
                                     class="w-[308px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
                                     type="email">
                             </label>
                             <label class="relative" for="">
-                                <span class="absolute bg-white top-[-10px] left-[10px]">Phone Number</span>
-                                <input placeholder="john.doe@gmail.com"
+                                <span class="absolute bg-white top-[-10px] left-[10px]">CVC</span>
+                                <input placeholder="123"
                                     class=" w-[308px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
                                     type="password">
                             </label>
                         </div>
                         <div class="mb-[24px]">
                             <label class="relative" for="">
-                                <span class="absolute bg-white top-[-27px] left-[10px]">Password</span>
-                                <input placeholder="Password"
+                                <span class="absolute bg-white top-[-27px] left-[10px]">Name on Card</span>
+                                <input placeholder="John Doe"
                                     class="mb-[24px] w-[640px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
                                     type="password">
                             </label><br>
                             <label class="relative" for="">
-                                <span class="absolute bg-white top-[-27px] left-[10px]">Confirm Password</span>
+                                <span class="absolute bg-white top-[-27px] left-[10px]">Country or Region</span>
 
-                                <input placeholder="Password"
-                                    class=" w-[640px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]"
-                                    type="password">
+                                <select placeholder="Password"
+                                    class=" w-[640px] border-[1px] border-[#79747E] rounded-[4px] outline-none pl-[16px] py-[14px] placeholder:text-[#1C1B1F]">
+                                    <option value="">United States</option>
+                                    <option value="">Uzbekistan</option>
+                                    <option value="">Russia</option>
+                                    <option value="">Ukraine</option>
+                                    <option value="">Turkey</option>
+                                </select>
                             </label>
                             <label class="pt-[24px] flex items-center gap-[8px]" for="">
                                 <input type="checkbox">
-                                <p>I agree to all the <a class="text-[#FF8682]" href="Terms">Terms</a> and <a
-                                        class="text-[#FF8682]" href="Privacy Policies">Privacy Policies</a></p>
+                                <p>Securely save my information for 1-click checkout</p>
                             </label>
                         </div>
                         <div class="">
-                            <div>
+                            <div class="items-center text-center">
                                 <button
-                                    class="mb-[16px] font-semibold text-[14px] leading-[17.07px] text-[#112211] rounded-[4px] py-3 w-[640px] bg-[#8DD3BB]">Create
-                                    account</button>
-
+                                    class="mb-[16px] font-semibold text-[14px] leading-[17.07px] text-[#112211] rounded-[4px] py-3 w-[640px] bg-[#8DD3BB]">Add
+                                    payment method</button>
+                                <p class=" font-normal text-[12px] leading-[14.63px] text-[#112211] opacity-[75%]">By confirming your subscription, you allow The Outdoor Inn Crowd Limited to charge
+                                    your card for this payment and future payments in accordance with their terms. You
+                                    can always cancel your subscription.</p>
                             </div>
-                            <div class="mb-[40px] ml-[220px]">
-                                <span class="font-medium  text-[14px] leading-[17.07px] text-[#112211]">
-                                    Already have an account? <a
-                                        class="font-semibold text-[14px] text-[#FF8682] leading-[17.07px]" href="./login.html"> Login</a>
-                                </span>
-                            </div>
-                            <div class="mb-[40px] flex items-center gap-[16px]">
-                                <hr class="w-[259px]">
-                                <p class="font-normal text-[14px] leading-[17.07px] text-[#112211] opacity-[50%]">Or
-                                    login with</p>
-                                <hr class="w-[259px]">
-                            </div>
-                            <div class="flex gap-[16px]">
-                                <a class="border-[1px] border-[#8DD3BB] rounded-[4px] py-[16px] px-[89px]" href="">
-                                    <img src="./img/login/facebook-ico.svg" alt="">
-                                </a>
-                                <a class="border-[1px] border-[#8DD3BB] rounded-[4px] py-[16px] px-[89px]" href="">
-                                    <img src="./img/login/google-ico.svg" alt="">
-                                </a>
-                                <a class="border-[1px] border-[#8DD3BB] rounded-[4px] py-[16px] px-[89px]" href="">
-                                    <img src="./img/login/apple-ico.svg" alt="">
-                                </a>
-                            </div>
+                           
                         </div>
                     </form>
                 </div>
